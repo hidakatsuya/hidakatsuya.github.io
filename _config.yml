@@ -5,6 +5,8 @@ baseurl: ""
 url: ""
 
 show_experts: false
+header_pages:
+  - about-me.md
 
 minima:
   social_links:
