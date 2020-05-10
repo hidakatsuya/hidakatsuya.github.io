@@ -6,7 +6,7 @@ permalink: /me/
 
 ![](/images/profile.jpeg)
 
-Katsuya HIDAKA (hidakatsuya)
+Katsuya HIDAKA @hidakatsuya
 
 - [Logs - diary, notes, etc](/)
 - [GitHub](https://github.com/hidakatsuya)
