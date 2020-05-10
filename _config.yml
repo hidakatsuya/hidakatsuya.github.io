@@ -4,6 +4,7 @@ description: hidakatsuya's diary, notes, etc
 baseurl: ""
 url: ""
 
+google_analytics: UA-27955104-4
 show_experts: false
 header_pages:
   - about-me.md
