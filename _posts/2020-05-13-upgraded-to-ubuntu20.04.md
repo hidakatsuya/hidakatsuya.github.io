@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu 20.04 にアップグレードした
 ---
 
-先日、Ubuntu の LTS 版である 20.04 がリリースされた :tada:
+先日、Ubuntu の LTS 版である 20.04 がリリースされた。
 
 ![](/images/2020-05-13-ubuntu20.04-announcement.png)
 [https://ubuntu.com/blog/ubuntu-20-04-lts-arrives](https://ubuntu.com/blog/ubuntu-20-04-lts-arrives)
