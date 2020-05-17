@@ -1,9 +1,9 @@
 ---
 layout: post
-title: VSCode の Tasks でテストランナーを実行する
+title: VSCode の Tasks でテストランナーなどの実行環境を整えた
 ---
 
-VSCode 上でのテストランナーの実行は、標準機能の [Tasks](https://code.visualstudio.com/docs/editor/tasks) を使っている。
+VSCode の標準機能の [Tasks](https://code.visualstudio.com/docs/editor/tasks) を使って、テストランナーなどの実行環境を整えた。
 
 実際の `tasks.json` はこんな感じだ。なお、これは Rails アプリを Docker 上で開発している場合のもの。
 
