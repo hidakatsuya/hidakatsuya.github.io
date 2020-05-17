@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VSCode の Tasks でテストランナー実行する
+title: VSCode の Tasks でテストランナーを実行する
 ---
 
 VSCode 上でのテストランナーの実行は、標準機能の [Tasks](https://code.visualstudio.com/docs/editor/tasks) を使っている。
