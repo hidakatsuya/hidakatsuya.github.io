@@ -13,7 +13,7 @@ Katsuya HIDAKA @hidakatsuya
 - [Twitter](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 
-帳票PDFライブラリ [Thinreports](https://github.com/thinreports) の作者で、Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行っています。公私ともに、Ruby, JavaScript, PHP, Ruby on Rails, TypeScript あたりをよく書いています。
+帳票PDFライブラリ [Thinreports](https://github.com/thinreports) の作者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
 
 #### Works
 
