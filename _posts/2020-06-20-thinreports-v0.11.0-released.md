@@ -26,8 +26,6 @@ title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリー�
 
 リリース自体の判断やリリースに関する他の議論は、[github.com/thinreports/thinreports](https://github.com/thinreports/thinreports) に [Issue #10 Release v0.11.0](https://github.com/thinreports/thinreports/issues/10) を作成して、タスクの管理やリリース日程の調整、その他の議論を行うようにした。
 
-[Thinreports - Issue#10 Release v0.11.0](https://github.com/thinreports/thinreports/issues/10)
-
 #### リリース手順の整備
 
 Editor, Generator それぞれのリリース手順を README に記載するとともに、その手順に従って実施した。
