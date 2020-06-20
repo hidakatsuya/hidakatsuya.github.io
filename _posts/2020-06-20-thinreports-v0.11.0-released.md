@@ -21,12 +21,13 @@ title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリー�
 
 全ての作業を pull request や issue で実施し、その作業の全ての議論をそれぞれのコメント欄で行った
 
-- [Editor - #80 Release v0.11.0](https://github.com/thinreports/thinreports-editor/pull/80)
-- [Generator - #105 Release v0.11.0](https://github.com/thinreports/thinreports-generator/pull/105)
+- [Editor - PR#80 Release v0.11.0](https://github.com/thinreports/thinreports-editor/pull/80)
+- [Generator - PR#105 Release v0.11.0](https://github.com/thinreports/thinreports-generator/pull/105)
 
 リリース自体の判断やリリースに関する他の議論は `thinreports/thinreports` に `Release v0.11.0` という issue を作成し、
 タスクの管理やリリース日程の調整、その他の議論を行うようにした。
-https://github.com/thinreports/thinreports/issues/10
+
+[Thinreports - Issue#10 Release v0.11.0](https://github.com/thinreports/thinreports/issues/10)
 
 #### リリース手順の明示
 
