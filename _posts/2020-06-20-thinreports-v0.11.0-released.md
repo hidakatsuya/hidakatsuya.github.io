@@ -23,6 +23,7 @@ title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリー�
 
 - [Editor - PR#80 Release v0.11.0](https://github.com/thinreports/thinreports-editor/pull/80)
 - [Generator - PR#105 Release v0.11.0](https://github.com/thinreports/thinreports-generator/pull/105)
+- [thinreports.org - PR#12 Announce release v0.11.0](https://github.com/thinreports/thinreports.org/pull/12)
 
 リリース自体の判断やリリースに関する他の議論は、[github.com/thinreports/thinreports](https://github.com/thinreports/thinreports) に [Issue #10 Release v0.11.0](https://github.com/thinreports/thinreports/issues/10) を作成して、タスクの管理やリリース日程の調整、その他の議論を行うようにした。
 
