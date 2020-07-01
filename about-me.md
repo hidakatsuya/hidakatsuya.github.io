@@ -17,6 +17,7 @@ Katsuya HIDAKA @hidakatsuya
 
 #### Works
 
+- 2020.07 弥生株式会社
 - 2015.10 株式会社Misoca
 - 2003.05 株式会社マツケイ
 
