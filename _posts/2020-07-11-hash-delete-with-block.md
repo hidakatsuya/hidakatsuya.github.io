@@ -20,7 +20,7 @@ p h #=> { b: 'bbb' }
 
 - 取り除いたキーの値を返す
 - 指定されたキーが見つからなかった場合 `nil` を返す
-- 破壊的に変更される
+- 破壊的に変更する
 
 という特徴を持っている。
 
@@ -64,8 +64,8 @@ h.delete(:x) { |key| "#{key} は見つかりませんでした" } #=> ":x は見
  4:   draw_emoji = options.delete(:emoji) { true }
 ```
 
-- `options` の `:emoji` キーを削除し、値を `draw_emoji` に入れる
-- `:emoji` キーが存在しない場合は `true` を `draw_emoji` に入れる
+- `options` の `:emoji` キーを削除し、値(boolean) を `draw_emoji` に格納する
+- `:emoji` キーが存在しない場合は `true` を `draw_emoji` に格納する
 
 ということをこの一行で実現することができる。
 
@@ -96,6 +96,14 @@ h.delete(:x) { |key| "#{key} は見つかりませんでした" } #=> ":x は見
 
 細かいことだが、`Hash#delete` を使うとこれをスッキリ書くことができる (読みやすいかどうかは別)
 
-[Ruby2.7.0 リファレンスマニュアル > Hash クラス](https://docs.ruby-lang.org/ja/latest/class/Hash.html#I_DELETE)
+See also [Ruby2.7.0 リファレンスマニュアル > Hash クラス](https://docs.ruby-lang.org/ja/latest/class/Hash.html#I_DELETE)
 
+ちなみに、
 
+`Hash#delete` の "取り除いたキーの値を返す" という特徴を使って、
+
+```ruby
+draw_emoji = options.delete(:emoji) || true
+```
+
+という方法も考えられるが、これは正しく動作しない。`emoji: false or nil` のとき、draw_emoji は `true` になってしまうからだ。
