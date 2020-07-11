@@ -106,4 +106,4 @@ See also [Ruby2.7.0 リファレンスマニュアル > Hash クラス](https://
 draw_emoji = options.delete(:emoji) || true
 ```
 
-という方法も考えられるが、これは正しく動作しない。`emoji: false or nil` のとき、draw_emoji は `true` になってしまうからだ。
+という方法も考えられるが、これは正しく動作しない。`emoji: false` のとき、draw_emoji は `true` になってしまうからだ。
