@@ -15,4 +15,4 @@ Breaking Changes
 Bug Fixes
 - [Some emojis are not displayed #34](https://github.com/hidakatsuya/prawn-emoji/issues/34)
 
-これまでの描画処理には不満を持っていたので、それが解決できて満足している。テストフレームワークを test-unit に移行したら、prawn-emoji についてはもうやることはないかなと思ってる。
+これまでの描画処理には、以前から不満を持っていたので、それが解決できて満足。あとは、test-unit への移行も近いうちにやりたいと思っている。
