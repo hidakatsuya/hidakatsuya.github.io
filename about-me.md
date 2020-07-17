@@ -4,7 +4,7 @@ title: Me
 permalink: /me/
 ---
 
-![](/images/profile.jpeg)
+![](/images/profile.png)
 
 Katsuya HIDAKA @hidakatsuya
 
