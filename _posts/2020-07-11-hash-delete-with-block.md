@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruby の Hash#delete はブロックを渡すことができ、これがとても便利だった
+title: Ruby の Hash#delete はブロックを渡すことができる
 ---
 
 `Hash#delete` はブロックを受け取ることを初めて知った。そして、これがとても便利だったのでまとめておく。
