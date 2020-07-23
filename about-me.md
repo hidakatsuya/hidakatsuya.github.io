@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Me
+title: me
 permalink: /me/
 ---
 
-![](/images/profile.png)
+<p style="text-align: center">
+  <img src="{{ site.baseurl }}/images/profile.png">
+</p>
 
 Katsuya HIDAKA @hidakatsuya
 
