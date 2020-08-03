@@ -52,3 +52,5 @@ $ rake install:macOS
 また、`(backup)` は、リンクパスにすでにファイルが存在していたため、そのファイルが `$HOME/dotfiles/backup/YYYYMMDDHHIISS/filename` にバックアップされたことを意味している。
 
 割と良い環境になったと思う。Ruby 使いやすい。
+
+(追記) この dotfile 環境を構築するためのツールを [flexdot という名前の gem にして公開した](https://hidakatsuya.github.io/2020/07/21/flexdot-1.0.0-released.html)。
