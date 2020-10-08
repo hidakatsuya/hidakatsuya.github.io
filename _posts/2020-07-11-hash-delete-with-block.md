@@ -45,23 +45,23 @@ h.delete(:x) { |key| "#{key} は見つかりませんでした" } #=> ":x は見
 の実装をするときに、この仕様のおかげでシンプルに書くことができた。
 
 ```ruby
- 1: # == Additional Options
- 2: # <tt>:emoji</tt>:: <tt>boolean</tt>. Whether or not to draw an emoji [true]
- 3: def draw_text!(text, options)
- 4:   draw_emoji = options.delete(:emoji) { true }
- 5:
- 6:  if draw_emoji && Emoji::Drawer.drawable?(text)
- 7:    emoji_drawer.draw(text.to_s, options)
- 8:  else
- 9:    super
-10:  end
-11: end
+# == Additional Options
+# <tt>:emoji</tt>:: <tt>boolean</tt>. Whether or not to draw an emoji [true]
+def draw_text!(text, options)
+  draw_emoji = options.delete(:emoji) { true }
+
+ if draw_emoji && Emoji::Drawer.drawable?(text)
+   emoji_drawer.draw(text.to_s, options)
+ else
+   super
+ end
+end
 ```
 
 このコードは、既存の `draw_text!`を拡張する実装である。L#4 で `Hash#delete` を使っており、
 
 ```ruby
- 4:   draw_emoji = options.delete(:emoji) { true }
+draw_emoji = options.delete(:emoji) { true }
 ```
 
 - `options` の `:emoji` キーを削除し、値(boolean) を `draw_emoji` に格納する
@@ -80,18 +80,18 @@ h.delete(:x) { |key| "#{key} は見つかりませんでした" } #=> ":x は見
 どうしても別途 `:emoji` キーを消すコードを入れないといけなかった。
 
 ```ruby
- 1: # == Additional Options
- 2: # <tt>:emoji</tt>:: <tt>boolean</tt>. Whether or not to draw an emoji [true]
- 3: def draw_text!(text, options)
- 4:   draw_emoji = options.fetch(:emoji, true) #=> Hash#fetch を使った場合
- 5:   options.delete(:emoji)                   #=> 別途 :emoji キーを削除しないといけない
- 6:
- 7:  if draw_emoji && Emoji::Drawer.drawable?(text)
- 8:    emoji_drawer.draw(text.to_s, options)
- 9:  else
-10:    super
-11:  end
-12: end
+# == Additional Options
+# <tt>:emoji</tt>:: <tt>boolean</tt>. Whether or not to draw an emoji [true]
+def draw_text!(text, options)
+  draw_emoji = options.fetch(:emoji, true) #=> Hash#fetch を使った場合
+  options.delete(:emoji)                   #=> 別途 :emoji キーを削除しないといけない
+
+ if draw_emoji && Emoji::Drawer.drawable?(text)
+   emoji_drawer.draw(text.to_s, options)
+ else
+   super
+ end
+end
 ```
 
 細かいことだが、`Hash#delete` を使うとこれをスッキリ書くことができる (読みやすいかどうかは別)
