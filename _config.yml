@@ -13,6 +13,7 @@ minima:
   social_links:
     twitter: hidakatsuya
     github: hidakatsuya
+    stackoverflow: "1160252"
 
 remote_theme: jekyll/minima
 
