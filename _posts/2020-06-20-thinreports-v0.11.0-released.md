@@ -3,6 +3,8 @@ layout: post
 title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリース手順などの運用周りを見直した
 ---
 
+## Thinreports v0.11.0 のリリース
+
 [Thinreports v0.11.0](http://www.thinreports.org/news/2020/06/thinreports-v0_11_0-released/) をリリースした。
 小さな breaking changes も含まれるが、bugfix が中心のリリースである。詳細はリンク先のアナウンスを参照して欲しい。
 
@@ -13,11 +15,11 @@ title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリー�
 
 そういった背景もあり、良い機会なのでできることから実施した。
 
-#### 他のメンテナとの協働
+## 他のメンテナとの協働
 
 全ての作業で、他のメンテナを積極的に巻き込んで進めた。
 
-#### 議論とステータスの透明化
+## 議論とステータスの透明化
 
 全ての作業を pull request や issue で実施し、その作業の全ての議論をそれぞれのコメント欄で行った。
 
@@ -27,7 +29,7 @@ title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリー�
 
 リリース自体の判断やリリースに関する他の議論は、[github.com/thinreports/thinreports](https://github.com/thinreports/thinreports) に [Issue #10 Release v0.11.0](https://github.com/thinreports/thinreports/issues/10) を作成して、タスクの管理やリリース日程の調整、その他の議論を行うようにした。
 
-#### リリース手順の整備
+## リリース手順の整備
 
 Editor, Generator それぞれのリリース手順を README に記載するとともに、その手順に従って実施した。
 

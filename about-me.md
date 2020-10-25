@@ -10,14 +10,14 @@ permalink: /me/
 
 Katsuya HIDAKA
 
-PDFライブラリ [Thinreports](https://github.com/thinreports) の作者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
-
-- [Tech note, Diary, etc](/)
+- [logs - Tech note, Diary, etc](/)
 - [GitHub](https://github.com/hidakatsuya)
 - [Twitter](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 
-## Work History
+PDFライブラリ [Thinreports](https://github.com/thinreports) の作者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
+
+## Job History
 
 - 2020.07 弥生株式会社 (合併による転籍)
 - 2015.10 株式会社Misoca
