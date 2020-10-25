@@ -5,16 +5,16 @@ title: 最近買った書籍
 
 最近、いくつかの書籍を購入した。
 
-### [雰囲気で使わずきちんと理解する！整理してOAuth2.0を使うためのチュートリアルガイド](https://www.amazon.co.jp/dp/B07XT8H2YG/ref=docs-os-doi_0)
+## [雰囲気で使わずきちんと理解する！整理してOAuth2.0を使うためのチュートリアルガイド](https://www.amazon.co.jp/dp/B07XT8H2YG/ref=docs-os-doi_0)
 
 OAuth2.0 は、仕事でもプライベートでも触れることが多いが、最近「雰囲気でしか理解してないな」と痛感することがあったので、腰を据えて向き合うことにした。
 この書籍は OAuth2.0 の入門書に位置付けられると思うが、自分が知りたい内容は十分に網羅されていて、かつとてもわかりやすかった。
 
-### [三体Ⅱ　黒暗森林（上）](https://www.amazon.co.jp/gp/product/B089M77R61/ref=ppx_yo_dt_b_d_asin_title_o02?ie=UTF8&psc=1)
+## [三体Ⅱ　黒暗森林（上）](https://www.amazon.co.jp/gp/product/B089M77R61/ref=ppx_yo_dt_b_d_asin_title_o02?ie=UTF8&psc=1)
 
 待ってました。準備運動として、第一部の後半を流し読みしているところ。
 
-### [お金のこと何もわからないままフリーランスになっちゃいましたが税金で損しない方法を教えてください！](https://www.amazon.co.jp/dp/B07JYDCR4T/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+## [お金のこと何もわからないままフリーランスになっちゃいましたが税金で損しない方法を教えてください！](https://www.amazon.co.jp/dp/B07JYDCR4T/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
 
 以前から税金について勉強したいと思っていたので、まずは「広く浅く知る」ために、漫画形式で読みやすそうなこの書籍を選んだ。
 最近購入した書籍の中でも、ダントツで積ん読になる可能性が高いので、これだけは Kindle 版ではなく単行本を購入してみた。
