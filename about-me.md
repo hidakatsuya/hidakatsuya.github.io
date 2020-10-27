@@ -15,7 +15,14 @@ Katsuya HIDAKA
 - [Twitter](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 
-PDFライブラリ [Thinreports](https://github.com/thinreports) の作者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
+PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
+
+## Products
+
+- [Thinreports](https://github.com/thinreports/thinreports) : An open source report tool for Ruby
+- [prawn-emoji](https://github.com/hidakatsuya/prawn-emoji) : An extension that add Emoji support to [Prawn](https://github.com/prawnpdf/prawn)
+- [flexdot](https://github.com/hidakatsuya/flexdot) : A Flexible and Rake based dotfile manager
+- [nippou-player](https://github.com/hidakatsuya/nippou-player) : A client for playing NIPPOU in esa.io
 
 ## Job History
 
