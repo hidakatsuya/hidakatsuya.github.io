@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ドメインを取得した
+date: 2020-11-01 03:00:00 +09:00
 ---
 
 ドメインの運用に興味があったこともあり、せっかくなので [Google Domains](https://domains.google/intl/ja_jp/) でこのサイトのドメインを取得した。
