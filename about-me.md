@@ -4,7 +4,7 @@ title: "@hidakatsuya"
 permalink: /me/
 ---
 
-![](images/profile.png)
+{% avatar hidakatsuya size=180 %}
 
 ## Profile
 
