@@ -4,6 +4,8 @@ description: Tech note, Profile, Diary, etc
 baseurl: ""
 url: ""
 
+timezone: Asia/Tokyo
+
 google_analytics: UA-27955104-4
 show_experts: false
 header_pages:

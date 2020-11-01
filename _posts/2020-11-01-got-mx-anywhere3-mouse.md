@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logicool MX Anywhere 3 マウスに移行した
-date: 2020-11-01 15:34:00 +09:00
+date: 2020-11-01 15:34:00 +0900
 ---
 
 10/29 に発売したばかりの [Logicool MX Anywhere 3](https://www.logicool.co.jp/ja-jp/products/mice/mx-anywhere-3.910-006005.html) を買った。
