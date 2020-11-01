@@ -20,13 +20,13 @@ MX Keys の前に使っていたのは [ARCHISS ProgresTouch RETRO TINY](https:/
 
 以下、2週間使った感想。
 
-Pros
+:+1: Pros
 
 - ちょうど良いキーストローク
 - 打ちやすく、疲れにくい
 - スタイルが好み
 
-Cons
+:-1: Cons
 
 - フルサイズはやはり大きい
 - 右Alt キーがホームポジションからやや右に離れている (Altキーを IME On/Off に割り当てているため、右Altだけ押しづらい)

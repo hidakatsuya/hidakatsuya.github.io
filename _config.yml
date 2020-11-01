@@ -24,6 +24,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-relative-links
+  - jemoji
 
 relative_links:
   collections: true
