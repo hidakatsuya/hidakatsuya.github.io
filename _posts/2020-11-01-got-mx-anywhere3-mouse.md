@@ -49,7 +49,7 @@ MX Anywhere3 にも Unifying レシーバが同梱されているため、MX Key
 Unifying レシーバは、[それ一つで最大6台のデバイスをペアリングできる](https://www.logicool.co.jp/ja-jp/promotions/6072) ため、
 [Unifying Software](https://support.logi.com/hc/ja/articles/360025297913) を使って、それぞれに MX Keys と MX Anywhere3 を追加でペアリングすることができる。
 
-なお、Unifying Software は Linux には提供されていない。自分は macOS でペアリングして使ってるが、[Solaar](https://github.com/pwr-Solaar/Solaar) を使って Linux 上でペアリングしても良いと思う。
+なお、Unifying Software は Linux には提供されていない。自分は macOS でペアリングを設定したが、[Solaar](https://github.com/pwr-Solaar/Solaar) を使って Linux 上でペアリングしても良いと思う。
 
 これによって、次のように劇的に環境が改善した。
 
