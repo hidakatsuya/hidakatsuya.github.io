@@ -53,4 +53,4 @@ $ rake install:macOS
 
 割と良い環境になったと思う。Ruby 使いやすい。
 
-(追記) この dotfile 環境を構築するためのツールを [flexdot という名前の gem にして公開した](https://hidakatsuya.github.io/2020/07/21/flexdot-1.0.0-released.html)。
+(追記) この dotfile 環境を構築するためのツールを [flexdot という名前の gem にして公開した](2020-07-21-flexdot-1.0.0-released.md)。
