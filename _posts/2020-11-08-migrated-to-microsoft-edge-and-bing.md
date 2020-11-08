@@ -24,7 +24,7 @@ Bing については特筆することがないので、Edge の Pros/Cons を�
 - 全体のデザインや雰囲気が好み
   - Chrome もシンプルで不満はないけど、個人的には Edge の方が洗練されている気がする
 - 拡張機能のアイコンをメニューに完全に隠すことができる
-  - Chrome も以前そうだったが、最近ツールバーに拡張機能アイコンが追加されたが、それが好きじゃなかった
+  - Chrome も以前そうだったが、最近のバージョンからツールバーに拡張機能アイコンが追加されるようになった
 - Chrome Extensions 互換
 - [Collections](https://support.microsoft.com/en-us/microsoft-edge/organize-your-ideas-with-collections-in-microsoft-edge-60fd7bba-6cfd-00b9-3787-b197231b507e) が割と使いみちがありそう
   - 例えば Read-later のストアとして使うなど
