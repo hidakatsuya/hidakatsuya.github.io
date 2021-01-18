@@ -20,7 +20,7 @@ Ruby3 で generator を使う場合は、必然的に Prawn v2.4 を使うこと
 - [Changelog (editor)](https://github.com/thinreports/thinreports-editor/blob/master/CHANGELOG.md)
 - [Changelog (generator)](https://github.com/thinreports/thinreports-generator/blob/master/CHANGELOG.md)
 
-## generator v0.12.0 におけるパフォーマンス問題
+## Generator v0.12.0 におけるパフォーマンス問題
 
 generator は [Prawn](https://github.com/prawnpdf/prawn) という PDFライブラリを使っている。
 そして、Prawn は [ttfunk](https://github.com/prawnpdf/ttfunk) という TTF (True Type Font) を扱うライブラリに依存している。
@@ -39,7 +39,7 @@ generator v0.12.0 がこの問題の影響を必ず受けるかというとそ�
 | 2.2 | `~> 1.5` | `~> 2.1` |
 
 上記より、Prawn v2.3 以降を使う場合に、この問題の影響を受けることになる。
-そして、Ruby3 で generator を使う場合も、現状ではこの問題の影響を受けることになる。
+そして、Ruby3 で generator を使う場合も、現時点では影響を受ける。
 なぜなら、Ruby3 を使うためには ttfunk v1.7 以降に依存する Prawn v2.4 を使う必要があるためだ。
 
 また、Ruby2 で generator v0.12.0 を使う場合でも注意が必要だ。
@@ -53,3 +53,5 @@ gem 'ttfunk', '~> 1.5.1'
 
 この問題は [ttfunk#PR83](https://github.com/prawnpdf/ttfunk/pull/83) で対応が進んでいるものの、現時点ではリリースされていない。
 このパフォーマンスの問題の影響は決して小さくないため、早期に取り込まれるようにコントリビュートしていきたい。
+
+詳細は [thinreports-generator#104](https://github.com/thinreports/thinreports-generator/issues/104) を参照して欲しい。
