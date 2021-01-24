@@ -28,30 +28,27 @@ generator は [Prawn](https://github.com/prawnpdf/prawn) という PDFライブ�
 しかし、この ttfunk の v1.6 以降には、 [ttfunk#82](https://github.com/prawnpdf/ttfunk/issues/82) で報告されている通り、
 v1.5 に比べてパフォーマンスが大幅に低下するという問題がある。
 
-generator v0.12.0 がこの問題の影響を必ず受けるかというとそうでもない。
+generator v0.12.0 はこの問題の影響を受けてしまうのだが、少々複雑な状況になっている。
 
-少しややこしいが、generator v0.12.0 が依存している Prawn 及び ttfunk、そして Ruby の関係性を下記に示す。
+下記は、generator v0.12.0 が依存している Prawn 及び ttfunk、そして Ruby の関係性をまとめたものだ。
 
-| Prawn | ttfunk | Ruby |
-| -- | -- | -- |
-| 2.4 | `~> 1.7` | `>= 2.5` |
-| 2.3 | `~> 1.6` | `~> 2.5` |
-| 2.2 | `~> 1.5` | `~> 2.1` |
+| Prawn | ttfunk | Ruby | パフォーマンス問題の影響 |
+| -- | -- | -- | -- |
+| 2.4 | `~> 1.7` | `>= 2.5` | 受ける |
+| 2.3 | `~> 1.6` | `~> 2.5` | 受ける |
+| 2.2 | `~> 1.5` | `~> 2.1` | 受けない |
 
-上記より、Prawn v2.3 以降を使う場合に、この問題の影響を受けることになる。
-そして、Ruby3 で generator を使う場合も、現時点では影響を受ける。
-なぜなら、Ruby3 を使うためには ttfunk v1.7 以降に依存する Prawn v2.4 を使う必要があるためだ。
+Prawn v2.3 以降は ttfunk v1.6 に依存しているため、Prawn v2.3 以降を使う場合は影響を受ける。
+また、Ruby3 で使う場合も、現状では影響を受けることになる。
 
-また、Ruby2 で generator v0.12.0 を使う場合でも注意が必要だ。
-確実に回避したいなら、下記の通り、Prawn v2.2 と ttfunk v1.5 に依存をロックしておく必要がある。もしくは、まだ v0.12.0 を使わないのも手だ。
+ttfunk v1.5 を使うようにすることで影響を避けることができるが、確実に回避するためには、下記のように ttfunk v1.5 に依存をロックしておくのが無難。
 
 ```ruby
 # Gemfile
-gem 'prawn', '~> 2.2.2'
 gem 'ttfunk', '~> 1.5.1'
 ```
 
-この問題は [ttfunk#PR83](https://github.com/prawnpdf/ttfunk/pull/83) で対応が進んでいるものの、現時点ではリリースされていない。
+なお、この問題は [ttfunk#PR83](https://github.com/prawnpdf/ttfunk/pull/83) で対応が進んでいるが、現時点ではリリースされていない。
 このパフォーマンスの問題の影響は決して小さくないため、早期に取り込まれるようにコントリビュートしていきたい。
 
 詳細は [thinreports-generator#104](https://github.com/thinreports/thinreports-generator/issues/104) を参照して欲しい。
