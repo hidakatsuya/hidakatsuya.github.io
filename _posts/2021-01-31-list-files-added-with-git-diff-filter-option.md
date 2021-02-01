@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git の --diff-filter オプションを使って、追加されたファイルを列挙する
+title: git の --diff-filter オプションを使って、追加されたファイルのみ列挙する
 ---
 
 例えば、 [このサイトのリポジトリ](https://github.com/hidakatsuya/hidakatsuya.github.io)
