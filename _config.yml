@@ -28,3 +28,10 @@ plugins:
 
 relative_links:
   collections: true
+
+markdown: CommonMarkGhPages
+commonmark:
+  extensions:
+    - autolink
+    - strikethrough
+    - table

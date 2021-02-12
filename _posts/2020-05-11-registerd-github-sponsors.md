@@ -5,8 +5,7 @@ title: GitHub Sponsors に登録した
 
 以前から興味のあった [GitHub Sponsors](https://github.com/sponsors) に登録した。
 
-私の Sponsor Profile はこんな感じ。  
-[https://github.com/sponsors/hidakatsuya](https://github.com/sponsors/hidakatsuya)
+私の Sponsor Profile は [こんな感じ](https://github.com/sponsors/hidakatsuya)。
 
 いくつかのプロジェクトにも sponsor ボタンを追加した。
 

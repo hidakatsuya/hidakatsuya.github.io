@@ -6,7 +6,7 @@ title: 単語単位の折り返しを無効にする Prawn 拡張 prawn-disable_
 [prawn-disable_word_break gem](https://github.com/hidakatsuya/prawn-disable_word_break) の最初のバージョン 1.0.0 をリリースした。
 
 > Fast, Nimble PDF Writer for Ruby
-> [https://github.com/prawnpdf/prawn](https://github.com/prawnpdf/prawn)
+> https://github.com/prawnpdf/prawn
 
 prawn は非常に使いやすい gem だが、ハイフネーションなど、テキストの単語の折り返しを制御するオプションが存在しない。
 他にも、タブや半角スペース、ソフトハイフン、ゼロ幅スペースによる単語折り返しがあり、prawn はこれらがデフォルトで有効になっている。

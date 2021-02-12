@@ -6,7 +6,8 @@ title: Ubuntu 20.04 にアップグレードした
 先日、Ubuntu の LTS 版である 20.04 がリリースされた。
 
 ![](/images/2020-05-13-ubuntu20.04-announcement.png)
-[https://ubuntu.com/blog/ubuntu-20-04-lts-arrives](https://ubuntu.com/blog/ubuntu-20-04-lts-arrives)
+
+https://ubuntu.com/blog/ubuntu-20-04-lts-arrives
 
 現在のメインマシンは Ubuntu 19.10 だったので、早々にアップグレードしたかったのだが降って来ない。
 GW中、時間を持て余していたということもあり、待ちきれず [公式ドキュメント](https://wiki.ubuntu.com/FocalFossa/ReleaseNotes) に従って強制的にアップグレードした。
