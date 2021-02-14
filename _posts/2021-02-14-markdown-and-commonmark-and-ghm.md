@@ -14,22 +14,20 @@ Markdown は、今や書かない日はないと言って良いほど身近な�
 GitHub Pages のデフォルトの挙動(後述)では、Markdown 中の URL にはそのままではリンクが貼られない。
 
 ```markdown
-https://github.com # => plain text
+https://github.com # => plain text のまま
 ```
 
-しかし、普段使っている GitHub ではこんな書き方をしなくても、自動的にリンクが貼られる。これはなぜか。
+しかし、普段使っている GitHub では自動的にリンクが貼られる。これはなぜか。
 
-答えは、
+答えは次の通り。
 
 - GitHub Pages (Jekyll) のデフォルトの Markdown Parser は [kramdown](https://kramdown.gettalong.org/syntax.html) で、kramdown は「前述の例の自動リンク」を少なくとも標準ではサポートしていない
 - GitHub (github.com) の Markdown は GitHub Flavored Markdown) であり、それは「前述の例の自動リンク」をサポートしている
 
-である。
-
 なお、kramdown でも次のような記述で URL にリンクを貼ることはできる(後で知った)。See [Automatic Links](https://kramdown.gettalong.org/syntax.html).
 
 ```markdown
-<https://github.com>
+<https://github.com> # => <a> で括られる
 ```
 
 ## GitHub Flavored Markdown
@@ -37,10 +35,9 @@ https://github.com # => plain text
 では、GitHub Flavored Markdown とはなんなのか。「github.com で使える Markdown のやつ」ぐらいの認識しかなかったが、
 調べてみると、それは概ね正しい回答であることがわかった。
 
-前述の自動リンクを解決する方法を調べた結果、GitHub Pages の設定を次のようにすることで実現できることがわかった。
+前述の自動リンクを解決する方法を調べた結果、GitHub Pages の `_config.yml` を次のように変更することで実現できることがわかった。
 
 ```diff
-# _config.yml
 + markdown: CommonMarkGhPages
 + commonmark:
 +  extensions:
@@ -55,11 +52,11 @@ https://github.com # => plain text
 
 では、この CommonMarkGhPages とはなんなのか。それを説明するには、まず CommonMark を知る必要がある。
 
-> We propose a standard, unambiguous syntax specification for Markdown, along with a suite of comprehensive tests to validate Markdown implementations against this specification. We believe this is necessary, even essential, for the future of Markdown.
+> We propose a standard, unambiguous syntax specification for Markdown, along with a suite of comprehensive tests to validate Markdown implementations against this specification. We believe this is necessary, even essential, for the future of Markdown.  
 > https://commonmark.org/
 
 つまり、CommonMark とは「Markdown の標準のうちの明確な仕様と、その仕様を検証するためのテストスイート」ということらしい。
-実際に、仕様を読むと、エッジケースの仕様について詳しく説明されている。
+実際に仕様を読むと、しつこいほどエッジケースの仕様について詳しく説明されている。
 
 https://spec.commonmark.org/0.29/
 
@@ -73,10 +70,10 @@ https://github.github.com/gfm/
 そして CommonMarkGhPages だが、残念ながらこれについての明確な説明を見つけることができなかったが、
 「この GitHub Flavored Markdown に準拠した GitHub Pages 用の Markdown Parser」であると推察できる。
 
-GitHub Flavored Markdown の仕様を見ると、CommonMark に加える形で前述の自動リンクの仕様が拡張されていることがわかる。
+なお、GitHub Flavored Markdown の仕様を見ると、CommonMark に加える形で前述の自動リンクの仕様が拡張されていることがわかる。
 
 > 6.9Autolinks (extension)
-> GFM enables the autolink extension, where autolinks will be recognised in a greater number of conditions.
+> GFM enables the autolink extension, where autolinks will be recognised in a greater number of conditions.  
 > https://github.github.com/gfm/#autolinks-extension-
 
 ## Markdown の歴史
@@ -87,7 +84,7 @@ CommonMark の役割に垣間見えるように、Markdown の歴史はなかな
 
 ## 最後に
 
-実は、これを書くまでは、 kramdown での自動リンクの記法 `<https://github.com>` を知らなかった。結果的には CommonMarkGhPages に変更したが、
+実は、これを書くまでは kramdown での自動リンクの記法 `<https://github.com>` を知らなかった。結果的には CommonMarkGhPages に変更したが、
 自動リンクの観点では kramdown のままでも良かったかもしれない。
 
 ただ、github.com 上で直接記事の作成/編集を行うことが多いことを踏まえると、Markdown は GitHub Flavored Markdown に統一しておいた方が良いと考えている。
