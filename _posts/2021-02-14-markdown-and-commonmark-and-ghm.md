@@ -22,7 +22,7 @@ https://github.com # => plain text のまま
 答えは次の通り。
 
 - GitHub Pages (Jekyll) のデフォルトの Markdown Parser は [kramdown](https://kramdown.gettalong.org/syntax.html) で、kramdown は「前述の例の自動リンク」を少なくとも標準ではサポートしていない
-- GitHub (github.com) の Markdown は GitHub Flavored Markdown) であり、それは「前述の例の自動リンク」をサポートしている
+- GitHub (github.com) の Markdown は GitHub Flavored Markdown であり、それは「前述の例の自動リンク」をサポートしている
 
 なお、kramdown でも次のような記述で URL にリンクを貼ることはできる(後で知った)。
 
