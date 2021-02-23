@@ -25,6 +25,7 @@ plugins:
   - jekyll-avatar
   - jekyll-relative-links
   - jekyll-sitemap
+  - jekyll-mentions
   - jemoji
 
 relative_links:
