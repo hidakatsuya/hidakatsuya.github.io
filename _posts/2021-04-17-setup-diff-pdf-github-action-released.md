@@ -7,7 +7,7 @@ title: diff-pdf をインストールする GitHub Action setup-diff-pdf をリ�
 
 ![](/images/2021-04-17-setup-diff-pdf.png)
 
-diff-pdf は、名前の通り、2つの PDF ファイルに差分のチェックや差分のビジュアライズ結果を生成できるツールである。
+diff-pdf は、名前の通り、2つの PDF ファイルの差分のチェックや、差分のビジュアライズ結果を生成できるツールである。
 特に、PDF を扱うプロダクトのビジュアルテストツールとして非常に有用だ。
 
 自身のプロダクトでも利用させてもらっている。
@@ -15,7 +15,7 @@ diff-pdf は、名前の通り、2つの PDF ファイルに差分のチェッ�
 - [thinreports-generator](https://github.com/thinreports/thinreports-generator) - Report Generator for Ruby
 - [prawn-emoji](https://github.com/hidakatsuya/prawn-emoji) - An extention that adds Emoji support to Prawn
 
-しかし、Ubuntu ではソースからビルドしなければならないため、GitHub Action の Ubuntu 上で使うためには少々冗長な実装になってしまう。
+しかし、Ubuntu ではソースからビルドしなければならないため、GitHub Action の Ubuntu で使うためにはひと手間必要になる。
 
 ```yaml
 - name: Set up diff-pdf
@@ -27,7 +27,7 @@ diff-pdf は、名前の通り、2つの PDF ファイルに差分のチェッ�
     ./bootstrap && ./configure && make && sudo make install
 ```
 
-これが、[hidakatsuya/setup-diff-pdf](https://github.com/marketplace/actions/setup-diff-pdf) を使うとスッキリ書ける。
+[hidakatsuya/setup-diff-pdf](https://github.com/marketplace/actions/setup-diff-pdf) ならこれだけ。
 
 ```yaml
 - uses: hidakatsuya/setup-diff-pdf@v1
