@@ -1,6 +1,6 @@
 ---
 layout: post
-title: diff-pdf をセットアップする GitHub Action をリリースした
+title: diff-pdf をインストールする GitHub Action setup-diff-pdf をリリースした
 ---
 
 [diff-pdf](https://github.com/vslavik/diff-pdf) をインストールする GitHub Action [hidakatsuya/setup-diff-pdf](https://github.com/hidakatsuya/setup-diff-pdf) をリリースした。
