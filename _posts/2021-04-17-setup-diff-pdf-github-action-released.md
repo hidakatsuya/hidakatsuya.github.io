@@ -32,7 +32,7 @@ diff-pdf は、名前の通り、2つの PDF ファイルの差分のチェッ�
 ```yaml
 - uses: hidakatsuya/setup-diff-pdf@v1
   with:
-    diff-pdf-version: 0.5
+    diff-pdf-version: '0.5'
 ```
 
 現在の v1.0.0 では `ubuntu-latest` と `windows-latest` をサポートしている。
