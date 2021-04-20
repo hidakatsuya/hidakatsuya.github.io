@@ -24,12 +24,10 @@ date: 2020-11-01 15:34:00 +0900
 この環境の問題点は次の通り。
 
 1. Mac mini と Thinkpad を切り替えるときに USB レシーバを差し替える必要がある
-  - 面倒すぎる。マウスを二台用意するのは負けた感じがするのでしたくない
 1. Mac mini の USB ポートが足りない
-  - Webカメラも接続しているので一つ足りず
+   - Webカメラも接続しているので一つ足らない
 1. MX Keys と Thinkpad を Bluetooth で接続しないといけない
-  - マウス・キーボードの Bluetooth 接続はいろいろと弊害があるので避けたい
-  - MX Keys はマルチデバイスに対応してる (Unifying or Bluetooth)
+   - マウス・キーボードの Bluetooth 接続は避けたい
 
 これを解決するために、マルチデバイス対応の Unifying 接続できる高精細マウスを探していた。
 [Logicool MX Master](https://www.logicool.co.jp/ja-jp/products/mice/mx-master-3.910-005707.html)
