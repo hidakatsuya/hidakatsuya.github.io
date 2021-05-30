@@ -23,6 +23,8 @@ PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。
 - [Thinreports](https://github.com/thinreports/thinreports) : An open source report tool for Ruby
 - [prawn-emoji](https://github.com/hidakatsuya/prawn-emoji) : An extension that add Emoji support to [Prawn](https://github.com/prawnpdf/prawn)
 - [flexdot](https://github.com/hidakatsuya/flexdot) : A Flexible and Rake based dotfile manager
+- [pdf_matcher](https://github.com/hidakatsuya/pdf_matcher) : A gem to compare two PDFs and output the differences using [diff-pdf](https://github.com/vslavik/diff-pdf)
+- [pdf_matcher-testing](https://github.com/hidakatsuya/pdf_matcher-testing) : This gem allows testing frameworks to perform PDF matching tests with the pdf_matcher
 - [setup-diff-pdf](https://github.com/hidakatsuya/setup-diff-pdf) : GitHub Action to install diff-pdf
 - [nippou-player](https://github.com/hidakatsuya/nippou-player) : A client for playing NIPPOU in esa.io
 
