@@ -4,12 +4,16 @@ title: Ubuntu 21.04 にアップグレードした
 ---
 
 先日 Ubuntu 21.04 がリリースされた。
+
 https://discourse.ubuntu.com/t/hirsute-hippo-release-notes/19221
 
 現在使っているバージョンは 20.10 のサポートは 7/22 までなので、重い腰を上げてアップグレードすることにした。
 アップグレード自体は特段大きな問題もなく完了。
 
 21.04 の大きな特徴の一つは、Wayland セッションのデフォルト化だろう。
+
+> Wayland is now the default on most configurations, which features better security and performance
+
 これまで Xセッション(GNOME on Xorg) を使ってきたが、この機会に Wayland への移行を試みた。
 
 が、移行を断念した。
