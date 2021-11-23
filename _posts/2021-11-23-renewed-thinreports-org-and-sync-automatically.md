@@ -1,0 +1,37 @@
+---
+layout: post
+title: thinreports.org を thinreports リポジトリの README.md と同期させ、情報の齟齬の防止とメンテナンスの作業量を削減した
+---
+
+一週間ほど前に www.thinreports.org をリニューアルした。
+
+リニューアルの概要は次の通り。
+
+- 今後 Thinreports の情報は [thinreports/thinreports](https://github.com/thinreports/thinreports) リポジトリに集める
+- www.thinreports.org は、ドキュメントなどの必要なコンテンツを thinreports/thinreports に移行した上で全て削除する
+- www.thinreports.org には index.html のみ配置し、[thinreports/thinreports の README.md](https://github.com/thinreports/thinreports/blob/main/README.md) と同期する
+
+詳細は [Renewal #2](https://github.com/thinreports/thinreports.github.io/pull/2) を参照して欲しいが、最後の「同期」について少しまとめておくことにする。
+
+「同期」のポイントは次の2つ。
+
+- thinreports/thinreports の README.md の変更が www.thinreports.org の index.html に自動的に反映されるようにする
+- www.thinreports.org のスタイルも合わせたい（個人的な好み）
+
+スタイルの同期については、[pages-themes/primer](https://github.com/pages-themes/primer) の Jekyll テーマを使うことで簡単に解決できる。
+
+一点だけ補足しておくと、ページのタイトル(`h1`)を表示しないようにするために、サイトのタイトルとページのタイトルを同一にする必要があった。
+[コード](https://github.com/pages-themes/primer/blob/6e9de10cb7479acd0a9ce3e69a6951c34c855365/_layouts/default.html#L14-L16) を読むと
+、サイトのタイトルを未設定にすれば良さそうだが、実際には `thinreports.github.io` がタイトルとして表示されてしまった。
+
+一方、README.md と index.html の同期については、いくつかの選択肢を検討した上で [GitHub Action のスケジュールイベント](https://docs.github.com/ja/actions/learn-github-actions/events-that-trigger-workflows#schedule) を使って、定期的に index.html を更新する方法で解決することにした。
+
+1. 毎日 0:00 (UTC) ごろに [ワークフロー](https://github.com/thinreports/thinreports.github.io/blob/master/.github/workflows/sync.yml) を実行
+2. thinreports/thinreports の README.md の内容を取得
+3. index.md の [Front Matter](http://jekyllrb-ja.github.io/docs/front-matter/)（先頭の `---` で囲まれた内容）と、取得した README.md の内容で index.md を更新する
+4. index.md に差分があれば push する。差分がなければ何もしない
+
+他の選択肢の検討など、詳細は [Sync index.md with README.md in thinreports/thinreports #4](https://github.com/thinreports/thinreports.github.io/pull/4) を参照して欲しい。
+
+現在、新しいテンプレート形式である [Section Format の開発](https://github.com/orgs/thinreports/projects/1) を少しづつだが進めている。それに伴い、しばらくの間は Thinreports の情報更新が頻繁に発生することになるが、その場合でも [tinreports/thinreports](https://github.com/thinreports/thinreports) リポジトリのみ更新すればよく、www.thinreports.org との情報の齟齬も生じなくなった。更新の作業量も減少し、管理するリポジトリも大幅に削減できた。良い。
+
