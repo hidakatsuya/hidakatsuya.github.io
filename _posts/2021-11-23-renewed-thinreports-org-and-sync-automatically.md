@@ -1,17 +1,15 @@
 ---
 layout: post
-title: thinreports.org を thinreports リポジトリの README.md と同期させ、情報の齟齬の防止とメンテナンスの作業量を削減した
+title: thinreports.org のコンテンツを thinreports リポジトリの README.md に自動的に同期させるようにした
 ---
 
-一週間ほど前に www.thinreports.org をリニューアルした。
-
-リニューアルの概要は次の通り。
+一週間ほど前に www.thinreports.org をリニューアルした。概要は次の通り。
 
 - 今後 Thinreports の情報は [thinreports/thinreports](https://github.com/thinreports/thinreports) リポジトリに集める
 - www.thinreports.org は、ドキュメントなどの必要なコンテンツを thinreports/thinreports に移行した上で全て削除する
 - www.thinreports.org には index.html のみ配置し、[thinreports/thinreports の README.md](https://github.com/thinreports/thinreports/blob/main/README.md) と同期する
 
-詳細は [Renewal #2](https://github.com/thinreports/thinreports.github.io/pull/2) を参照して欲しいが、最後の「同期」について少しまとめておくことにする。
+詳細は [Renewal #2](https://github.com/thinreports/thinreports.github.io/pull/2) を参照して欲しいが、最後の「同期」については少しまとめておくことにする。
 
 「同期」のポイントは次の2つ。
 
@@ -19,10 +17,6 @@ title: thinreports.org を thinreports リポジトリの README.md と同期さ
 - www.thinreports.org のスタイルも合わせたい（個人的な好み）
 
 スタイルの同期については、[pages-themes/primer](https://github.com/pages-themes/primer) の Jekyll テーマを使うことで簡単に解決できる。
-
-一点だけ補足しておくと、ページのタイトル(`h1`)を表示しないようにするために、サイトのタイトルとページのタイトルを同一にする必要があった。
-[コード](https://github.com/pages-themes/primer/blob/6e9de10cb7479acd0a9ce3e69a6951c34c855365/_layouts/default.html#L14-L16) を読むと
-、サイトのタイトルを未設定にすれば良さそうだが、実際には `thinreports.github.io` がタイトルとして表示されてしまった。
 
 一方、README.md と index.html の同期については、いくつかの選択肢を検討した上で [GitHub Action のスケジュールイベント](https://docs.github.com/ja/actions/learn-github-actions/events-that-trigger-workflows#schedule) を使って、定期的に index.html を更新する方法で解決することにした。
 
