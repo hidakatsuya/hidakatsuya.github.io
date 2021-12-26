@@ -1,7 +1,7 @@
 ---
 layout: post
 title: キーボードを Logitech MX Keys から MX Keys Mini に変えた
-date: 2021-12-26 23:30:00 +0900
+date: 2021-12-26 21:30:00 +0900
 ---
 
 少し前の話だが、キーボードを [Logitech MX Keys Mini](https://www.logitech.com/en-us/products/keyboards/mx-keys-mini.920-010473.html) に変えた。
