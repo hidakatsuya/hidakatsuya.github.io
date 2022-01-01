@@ -28,13 +28,13 @@ PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。
 - [setup-diff-pdf](https://github.com/hidakatsuya/setup-diff-pdf) : GitHub Action to install diff-pdf
 - [nippou-player](https://github.com/hidakatsuya/nippou-player) : A client for playing NIPPOU in esa.io
 
-## Job History
+## History
 
 - 2020.07 弥生株式会社 (合併による転籍)
 - 2015.10 株式会社Misoca
 - 2003.05 株式会社マツケイ
 
-## Slides
+## Presentations
 
 - [後方互換の保ち方 - 松江Ruby会議09](https://speakerdeck.com/hidakatsuya/how-to-maintain-compatibility)
 - [HTML帳票 - 第3回フロントエンド勉強会 in 松江](https://speakerdeck.com/hidakatsuya/frontend-study-group-in-sannin-3rd)
