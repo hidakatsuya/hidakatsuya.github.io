@@ -1,5 +1,4 @@
 ---
-layout: post
 title: キーボードを Logitech MX Keys に変えた
 ---
 

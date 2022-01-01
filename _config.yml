@@ -28,3 +28,9 @@ commonmark:
     - autolink
     - strikethrough
     - table
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post

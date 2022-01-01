@@ -1,5 +1,4 @@
 ---
-layout: post
 title: prawn-emoji v4.0.0 をリリースした
 ---
 

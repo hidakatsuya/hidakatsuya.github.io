@@ -1,5 +1,4 @@
 ---
-layout: post
 title: GitHub Sponsors に登録した
 ---
 

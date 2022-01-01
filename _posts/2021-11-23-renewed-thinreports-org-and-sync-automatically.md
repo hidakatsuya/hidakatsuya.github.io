@@ -1,5 +1,4 @@
 ---
-layout: post
 title: thinreports.org のコンテンツを thinreports リポジトリの README.md に自動的に同期させるようにした
 ---
 

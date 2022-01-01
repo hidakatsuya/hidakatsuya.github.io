@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PS5 を手に入れた
 ---
 

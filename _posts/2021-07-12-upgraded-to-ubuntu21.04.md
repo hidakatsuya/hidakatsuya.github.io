@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ubuntu 21.04 にアップグレードした
 ---
 

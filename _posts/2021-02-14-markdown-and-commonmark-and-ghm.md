@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Markdown の URL 自動リンクと CommonMark と GitHub Flavored Markdown
 ---
 
@@ -54,7 +53,7 @@ https://github.com # => plain text のまま
 
 では、この CommonMarkGhPages とはなんなのか。それを説明するには、まず CommonMark を知る必要がある。
 
-> We propose a standard, unambiguous syntax specification for Markdown, along with a suite of comprehensive tests to validate Markdown implementations against this specification. We believe this is necessary, even essential, for the future of Markdown.  
+> We propose a standard, unambiguous syntax specification for Markdown, along with a suite of comprehensive tests to validate Markdown implementations against this specification. We believe this is necessary, even essential, for the future of Markdown.
 > https://commonmark.org/
 
 つまり、CommonMark とは「Markdown の標準の明確な仕様と、その仕様を検証するためのテストスイート」ということらしい。
@@ -75,7 +74,7 @@ https://github.github.com/gfm/
 ちなみに、GitHub Flavored Markdown の仕様を見ると、CommonMark に加える形で前述の自動リンクの仕様が拡張されていることがわかる。
 
 > 6.9Autolinks (extension)
-> GFM enables the autolink extension, where autolinks will be recognised in a greater number of conditions.  
+> GFM enables the autolink extension, where autolinks will be recognised in a greater number of conditions.
 > https://github.github.com/gfm/#autolinks-extension-
 
 ## Markdown の歴史

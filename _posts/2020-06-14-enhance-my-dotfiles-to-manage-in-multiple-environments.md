@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 複数環境の dotfile を扱えるようにした
 ---
 

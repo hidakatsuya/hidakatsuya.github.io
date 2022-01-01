@@ -1,5 +1,4 @@
 ---
-layout: post
 title: vscode-neovim に移行した
 ---
 

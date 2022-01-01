@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Emoji 13.0 に対応した prawn-emoji v3.3.0 をリリースした
 ---
 

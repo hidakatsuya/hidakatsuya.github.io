@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 一年半ぶりに Thinreports v0.11.0 をリリースして、リリース手順などの運用周りを見直した
 ---
 

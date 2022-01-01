@@ -1,5 +1,4 @@
 ---
-layout: post
 title: VSCode の Tasks でテストランナーなどの実行環境を整えた
 ---
 

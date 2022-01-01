@@ -1,5 +1,4 @@
 ---
-layout: post
 title: キーボードを Logitech MX Keys から MX Keys Mini に変えた
 date: 2021-12-26 21:30:00 +0900
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ruby3 に対応した Thinreports v0.12.0 をリリースした
 date: 2021-01-18 22:16:00 +0900
 ---

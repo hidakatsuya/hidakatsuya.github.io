@@ -1,5 +1,4 @@
 ---
-layout: post
 title: GitHub Pages で個人サイトを公開した
 ---
 

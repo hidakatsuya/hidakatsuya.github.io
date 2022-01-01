@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Thinreports の GitHub Discussions を開設した
 date: 2021-02-13 15:54 0:00:00 +0900
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Wikipedia に寄付した
 ---
 

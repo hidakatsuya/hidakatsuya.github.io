@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Logicool MX Anywhere 3 マウスに移行した
 date: 2020-11-01 15:34:00 +0900
 ---

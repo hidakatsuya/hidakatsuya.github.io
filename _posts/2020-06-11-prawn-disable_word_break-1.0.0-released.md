@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 単語単位の折り返しを無効にする Prawn 拡張 prawn-disable_word_break をリリースした
 ---
 

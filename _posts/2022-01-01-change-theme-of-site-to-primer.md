@@ -1,5 +1,4 @@
 ---
-layout: post
 title: サイトのテーマを Primer Theme に変更した
 ---
 

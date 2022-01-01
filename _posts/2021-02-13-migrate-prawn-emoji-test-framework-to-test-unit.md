@@ -1,5 +1,4 @@
 ---
-layout: post
 title: prawn-emoji の test framework を test-unit に移行した
 date: 2021-02-13 07:29:00 +0900
 ---

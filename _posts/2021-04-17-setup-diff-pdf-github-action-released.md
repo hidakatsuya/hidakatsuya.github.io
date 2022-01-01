@@ -1,5 +1,4 @@
 ---
-layout: post
 title: diff-pdf をインストールする GitHub Action setup-diff-pdf をリリースした
 ---
 

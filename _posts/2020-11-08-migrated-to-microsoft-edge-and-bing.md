@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Microsoft Edge と Bing に移行した
 ---
 
@@ -38,7 +37,7 @@ Bing については特筆することがないので、Edge の Pros/Cons を�
 - 描画速度も体感で Chrome と変わらない
 - 今後、より一層 VSCode との連携が強化されそう
   - 現時点で Chrome/Edge でいろいろと連携できるが、Microsoft ということで、Edge の方がより便利で安定した連携がなされるんじゃないかと勝手に期待してる
-  
+
 ### :-1: Cons
 
 特になし。強いて言うならプレビュー版(Linux版)であることぐらい。

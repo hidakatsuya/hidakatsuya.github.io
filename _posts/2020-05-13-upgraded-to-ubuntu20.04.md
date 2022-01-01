@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ubuntu 20.04 にアップグレードした
 ---
 
