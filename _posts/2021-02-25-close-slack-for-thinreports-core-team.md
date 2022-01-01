@@ -17,7 +17,7 @@ title: コアチームの Slack を閉じてコミュニケーションポリシ
 
 ## Communication Policy
 
-![](/images/2021-02-25-communication-policy.png)
+![2021-02-25-communication-policy](https://user-images.githubusercontent.com/739339/147848193-f8ac8eb2-86b8-4e1e-90c0-f1b65f02920a.png)
 
 策定したポリシーは次のようなもの。
 
@@ -37,7 +37,8 @@ title: コアチームの Slack を閉じてコミュニケーションポリシ
 
 例えば Organization の権限や設定、運用についての議論や、RubyGems.org などのアカウント周りの話題など、どうしても public な場で話すことができない議論もある。そういったセンシティブな情報を扱う議論は、 `thinreports/core` チームの Team Discussions で行う。
 
-![](/images/2021-02-25-sensitive-discussion.png)
+![2021-02-25-sensitive-discussion](https://user-images.githubusercontent.com/739339/147848189-e575de60-4a64-4f8c-ad34-da23ae68da3f.png)
+
 
 ### 日本語OK
 
@@ -45,7 +46,7 @@ title: コアチームの Slack を閉じてコミュニケーションポリシ
 
 Thinreports は少なからず海外のユーザもいるので、英語で議論することが望ましい。しかし、より良い議論を行い、良いプロダクトを作ることの方が今の Thinreports Organization には必要だと考えた。
 
-![](/images/2021-02-25-japanese-ok.png)
+![2021-02-25-japanese-ok](https://user-images.githubusercontent.com/739339/147848185-50303f4c-1ddc-4f40-b6eb-d6db9ca3bc1d.png)
 
 ## 最後に
 
