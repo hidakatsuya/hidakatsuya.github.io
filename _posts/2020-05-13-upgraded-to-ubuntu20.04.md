@@ -5,7 +5,7 @@ title: Ubuntu 20.04 にアップグレードした
 
 先日、Ubuntu の LTS 版である 20.04 がリリースされた。
 
-![](/images/2020-05-13-ubuntu20.04-announcement.png)
+![2020-05-13-ubuntu20 04-announcement](https://user-images.githubusercontent.com/739339/147848239-bfa402b5-2b88-4592-8766-efea24cad0a2.png)
 
 https://ubuntu.com/blog/ubuntu-20-04-lts-arrives
 
