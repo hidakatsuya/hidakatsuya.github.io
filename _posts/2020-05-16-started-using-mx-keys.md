@@ -5,7 +5,7 @@ title: キーボードを Logitech MX Keys に変えた
 
 2週間ほど前から [Logitech MX Keys](https://www.logitech.com/en-us/product/mx-keys-wireless-keyboard) を使い始めた。
 
-![](/images/2020-05-16-mx-keys.png)
+![2020-05-16-mx-keys](https://user-images.githubusercontent.com/739339/147848232-4cf3f4bd-bd8f-4d52-afa3-cba7176d4778.png)
 
 日本語配列の [MX Keys (Logicool)](https://www.logicool.co.jp/ja-jp/product/mx-keys-wireless-keyboard) は国内で普通に手に入るけど、US配列はそうもいかない。
 仕方ないので、今年の初めごろに ebay で個人輸入した。初めての個人輸入でなかなか面白い体験だった。
