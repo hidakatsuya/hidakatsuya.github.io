@@ -14,7 +14,7 @@ $ gh pr checkout 1234
 
 例えば、[rails/rails](https://github.com/rails/rails/pulls) の pull request から目的のものをチェックアウトする場合はこんな感じだ。
 
-![](/images/2021-04-10-checkout-pr-using-gh-with-fzf.gif)
+![2021-04-10-checkout-pr-using-gh-with-fzf](https://user-images.githubusercontent.com/739339/147848214-c471fcd6-5067-4c34-a299-df9167b1ff1a.gif)
 
 `gh` はリリース当初から使っているが、改めて調べてみると面白い。
 特に [Using gh in GitHub Actions](https://github.blog/2021-03-11-scripting-with-github-cli/#using-gh-in-github-actions) にある通り、
