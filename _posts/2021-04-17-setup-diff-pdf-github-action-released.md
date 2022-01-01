@@ -5,7 +5,7 @@ title: diff-pdf をインストールする GitHub Action setup-diff-pdf をリ�
 
 [diff-pdf](https://github.com/vslavik/diff-pdf) をインストールする GitHub Action [hidakatsuya/setup-diff-pdf](https://github.com/hidakatsuya/setup-diff-pdf) をリリースした。
 
-![](/images/2021-04-17-setup-diff-pdf.png)
+![2021-04-17-setup-diff-pdf](https://user-images.githubusercontent.com/739339/147848159-2a9041c5-9a84-4511-b25a-d1e955e93090.png)
 
 diff-pdf は、名前の通り、2つの PDF ファイルの差分のチェックや、差分のビジュアライズ結果を生成できるツールである。
 特に、PDF を扱うプロダクトのビジュアルテストツールとして非常に有用だ。
@@ -36,4 +36,3 @@ diff-pdf は、名前の通り、2つの PDF ファイルの差分のチェッ�
 ```
 
 現在の v1.0.0 では `ubuntu-latest` と `windows-latest` をサポートしている。
-
