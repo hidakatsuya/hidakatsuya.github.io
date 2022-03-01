@@ -1,5 +1,5 @@
 ---
-title: 120個程の Vue2 コンポーネントを Composition API に一括移行した
+title: 120 の Vue2 コンポーネントを Composition API に一括移行した
 ---
 
 現在、[Thinreports Section Editor](https://github.com/thinreports/thinreports-section-editor) の Vue3 移行を進めている。その最初のステップとして、Vue2 (Options API) コンポーネントを [Composition API](https://github.com/vuejs/composition-api) へと移行した。
