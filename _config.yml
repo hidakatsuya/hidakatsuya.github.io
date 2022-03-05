@@ -24,6 +24,8 @@ relative_links:
 
 markdown: CommonMarkGhPages
 commonmark:
+  options:
+    - UNSAFE
   extensions:
     - autolink
     - strikethrough
