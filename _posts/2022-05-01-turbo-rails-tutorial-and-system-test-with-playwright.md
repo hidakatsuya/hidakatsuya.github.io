@@ -29,7 +29,7 @@ date: 2022-05-01 20:19:00 +0900
 余談だが、この作者の方は Playwright の Ruby クライアント [playwright-ruby-client](https://github.com/YusukeIwaki/playwright-ruby-client) の作者でもある。
 この作者の方の [紹介スライド](https://speakerdeck.com/yusukeiwaki/railsfalsesystem-speckara-playwrightwoshi-u) で Capybara から Playwright までわかりやすく説明されており、非常に勉強になった。
 
-実装の対応内容は以下のコミットの通り。  
+実際の対応内容は以下のコミットの通り。  
 
 :octocat: [hidakatsuya/quote-editor:a2e6aa5 - system test works with playwright](https://github.com/hidakatsuya/quote-editor/commit/a2e6aa57421da35126d0b76556709caa60a72dc3)
 
