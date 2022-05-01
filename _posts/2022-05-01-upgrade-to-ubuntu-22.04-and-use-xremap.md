@@ -8,14 +8,14 @@ Ubuntu 21.04 で Wayland セッションがデフォルトになったが、キ�
 当時は Wayland をサポートしていなかったこともあり、引き続き Xorg (GNOME) セッションを使っていた。
 
 22.04 へのアップグレードの機会に Wayland への切り替えを試みたものの、xkeysnail は依然として Wayland をサポートしていない。
-xkeysnail の Wayland 対応方法を調べていたところ、Wayland もサポートする [xremap](https://github.com/k0kubun/xremap) を見つけ、切り替えを進めることにした。
+xkeysnail の Wayland 対応方法を調べていたところ、Wayland もサポートする [xremap](https://github.com/k0kubun/xremap) を見つけたので、早速使ってみることにした。
 
-xremap については、[GitHub リポジトリ](https://github.com/k0kubun/xremap) に全てまとまっている。
-また、作者の方の [ブログエントリー](https://k0kubun.hatenablog.com/entry/xremap) は、目的や背景、Wayland サポートについても丁寧に説明されている。目を通しておくと良いと思う。
+xremap の詳細は [GitHub リポジトリ](https://github.com/k0kubun/xremap) にまとまっている。
+また、[作者の方のブログエントリー](https://k0kubun.hatenablog.com/entry/xremap) では、目的や背景、Wayland サポートについても丁寧に説明されているので、目を通しておくと良いと思う。
 
 使い方は非常にわかりやすい。Alt キーによる IME の切り替えも簡単で、YAML での設定の書き心地も非常に良かった。
 
-以下、一部設定内容をまとめておく。基本的に xkeysnail の設定をベースにしている。
+以下、一部設定内容をまとめておく。基本的に xkeysnail での構成をベースにしている。
 
 関連ファイルとディレクトリ構造
 ```
@@ -55,7 +55,7 @@ keymap:
 # ...
 ```
 
-起動スクリプト start.sh
+start.sh
 ```sh
 #!/usr/bin/env bash
 
@@ -65,7 +65,7 @@ xhost +SI:localuser:root
 sudo xremap --watch=device $HOME/.config/xremap/config.yml &
 ```
 
-終了スクリプト stop.sh
+stop.sh
 ```sh
 #!/usr/bin/env bash
 
@@ -77,14 +77,13 @@ if [ -n "$PID" ]; then
 fi
 ```
 
-パスワードなしで sudo できるようにする
+sudoers（参考: [Man page of SUDOERS](https://linuxjm.osdn.jp/html/sudo/man5/sudoers.5.html)）
 ```
 # /etc/sudoers.d/xremap
 hidakatsuya ALL = NOPASSWD: /usr/local/bin/xremap
 ```
-参考: [Man page of SUDOERS](https://linuxjm.osdn.jp/html/sudo/man5/sudoers.5.html)
 
-Startup Application に以下を登録して自動起動
+Startup Applications
 ```
 [Desktop Entry]
 Type=Application
@@ -100,6 +99,6 @@ Name[en_US]=xremap
 Comment[en_US]=Enable custom keymapping with xremap
 ```
 
-あっさり移行できてしまい、今の所動作も全く問題ない。本当に素晴らしい。感謝。
+あっさり移行できてしまい、今の所動作も問題なく快適。本当に素晴らしい。感謝。
 
 ただ、肝心の Wayland への切り替えはまだなので、気持ちが高まってきたらやろうと思う。
