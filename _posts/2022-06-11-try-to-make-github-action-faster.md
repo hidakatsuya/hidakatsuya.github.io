@@ -16,7 +16,7 @@ title: GitHub Actions での Docker によるテストの高速化を試みた
 docker-compose.yml と .github/workflows/test.yml は次の通り。
 
 いずれも高速化や最適化は考慮していない最もシンプルな実装だが、 毎回 docker build しなくて済むように、app, playwright サービスは
-ビルド済みのイメージをコンテナレジストリに保存するようにしている。また、app イメージについてはアプリ固有の情報を保持していない。
+予めビルド済みのイメージをコンテナレジストリに保存してある。また、app イメージにはアプリ固有の情報を保持しないようにしてある。
 
 ```yml
 # docker-compose.yml
