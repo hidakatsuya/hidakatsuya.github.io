@@ -75,7 +75,7 @@ jobs:
 
     - name: Build and setup
       run: |
-        docker-compose build
+        docker-compose pull
         docker-compose run app bin/setup
         docker-compose up -d
 
@@ -140,7 +140,7 @@ jobs:
 +      uses: actions/cache@v3
 +      with:
 +        path: ${{ env.BUNDLE_STORE_PATH }}
-+        key: ${{ env.RUBY_VERSION }}-gemt-${{ hashFiles('Gemfile.lock') }}
++        key: ${{ env.RUBY_VERSION }}-gems-${{ hashFiles('Gemfile.lock') }}
 +        restore-keys: |
 +          ${{ env.RUBY_VERSION }}-gems-
 +
