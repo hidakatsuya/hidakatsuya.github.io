@@ -6,11 +6,12 @@ date: 2022-06-11 21:33:00 +0900
 [GitHub Actions での Docker によるテストの高速化を試みた](2022-06-11-try-to-make-github-action-faster.md)
 の記事を公開した後、コードブロック内の {% raw %} `${{ ... }}` {% endraw %} が全て消えていることに気づいた。
 
-a.png
+![a](https://user-images.githubusercontent.com/739339/173188286-2bc9b973-cb60-451a-976c-069389f3a160.png)
 
 おかしい。正しくはこう。
 
-b.png
+![b](https://user-images.githubusercontent.com/739339/173188459-cfc14e67-431d-4e75-abdb-acabee4a5974.png)
+
 
 手元で `jekyll serve` してみると確かに警告が出力されていた。
 
