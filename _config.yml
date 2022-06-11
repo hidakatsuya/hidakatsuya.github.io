@@ -17,10 +17,14 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-mentions
+  - jekyll-gist
   - jemoji
 
 relative_links:
   collections: true
+
+gist:
+  noscript: false
 
 markdown: CommonMarkGhPages
 commonmark:
