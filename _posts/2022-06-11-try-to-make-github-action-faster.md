@@ -18,6 +18,8 @@ docker-compose.yml と .github/workflows/test.yml は次の通り。
 いずれも高速化や最適化は考慮していない最もシンプルな実装だが、 毎回 docker build しなくて済むように、app, playwright サービスは
 予めビルド済みのイメージをコンテナレジストリに保存してある。また、app イメージにはアプリ固有の情報を保持しないようにしてある。
 
+{% raw %}
+
 ```yml
 # docker-compose.yml
 version: "3"
@@ -58,6 +60,10 @@ volumes:
   pg-data:
 ```
 
+{% endraw %}
+
+{% raw %}
+
 ```yml
 # .github/workflows/test.yml
 name: Test
@@ -83,6 +89,8 @@ jobs:
       run: docker-compose exec -T app bin/rails test:all
 ```
 
+{% endraw %}
+
 このときの実行時間は 2m 前後。
 
 ![s1](https://user-images.githubusercontent.com/739339/173177018-fa6e7797-c15d-4b88-9ad6-7a626a45797e.png)
@@ -90,6 +98,8 @@ jobs:
 ## Gem のキャッシュ
 
 毎回 `docker-compose run app bin/setup` で `bundle install` しなくて済むように、`bundle install` の結果をキャッシュする。
+
+{% raw %}
 
 ```diff
 --- a/docker-compose.yml
@@ -105,7 +115,7 @@ jobs:
      depends_on:
 @@ -32,5 +32,4 @@ services:
      command: --port 8888 --path /ws
- 
+
  volumes:
 -  bundle:
    pg-data:
@@ -115,9 +125,9 @@ jobs:
 --- a/.github/workflows/test.yml
 +++ b/.github/workflows/test.yml
 @@ -2,6 +2,10 @@ name: Test
- 
+
  on: push
- 
+
 +env:
 +  BUNDLE_STORE_PATH: /tmp/bundle
 +  RUBY_VERSION: '3.1.0'
@@ -127,7 +137,7 @@ jobs:
      name: Test
 @@ -9,12 +13,30 @@ jobs:
      runs-on: ubuntu-latest
- 
+
      steps:
 -    - uses: actions/checkout@v2
 +    - uses: actions/checkout@v3
@@ -149,16 +159,18 @@ jobs:
 +      run: |
 +        bundle config path $BUNDLE_STORE_PATH
 +        bundle install --jobs 4 --retry 3
- 
+
      - name: Build and setup
        run: |
          docker-compose pull
 -        docker-compose run app bin/setup
 +        docker-compose run app bin/rails db:prepare
          docker-compose up -d
- 
+
      - name: Test
 ```
+
+{% endraw %}
 
 環境変数 `BUNDLE_STORE_PATH` で bundle ボリュームのホストパスを指定できるようにしている。
 ```diff
@@ -181,6 +193,9 @@ Playwright のイメージは 2.3GB とサイズが大きいため、Docker イ�
 が、先に結論を書くと、こちらは高速化に至らなかった。
 
 `.github/workflows/test.yml` は次の通り。差分が大きいため全体を示す。[Gist](https://gist.github.com/hidakatsuya/a20985499939d47ba23e08c0cdeacc62) にも置いてある。
+
+
+{% raw %}
 
 ```yml
 # .github/workflows/test.yml
@@ -293,6 +308,8 @@ jobs:
     - name: Test
       run: docker-compose exec -T app bin/rails test:all
 ```
+
+{% endraw %}
 
 Docker イメージと gem の準備は、ジョブを並列化して時間を短縮している。ジョブの構成は次に通り。
 
