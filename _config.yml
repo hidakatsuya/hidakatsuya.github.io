@@ -6,8 +6,6 @@ url: "https://hidakatsuya.dev"
 
 timezone: Asia/Tokyo
 
-google_analytics: UA-27955104-4
-
 remote_theme: pages-themes/primer
 
 plugins:
