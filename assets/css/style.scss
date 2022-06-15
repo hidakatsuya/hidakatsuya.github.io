@@ -1,0 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.gist {
+  tr, td {
+    border: none !important;
+  }
+}
