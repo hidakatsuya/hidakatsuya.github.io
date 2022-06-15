@@ -319,11 +319,11 @@ Docker イメージと gem の準備は、ジョブを並列化して時間を�
 gem のキャッシュの時と同様に `actions/cache` を使って docker pull/save にてイメージをキャッシュし、
 docker load にてキャッシュを読み出すことで docker pull は不要になった。
 
-gem と Docker イメージ両方のキャッシュがある状態での実行時間は 2m40s 前後。1m 程度遅くなってしまった。
+gem と Docker イメージ両方のキャッシュがある状態での実行時間は 2m40s 前後。1m 程度遅くなるという結果に。
 
 ![image](https://user-images.githubusercontent.com/739339/173179335-b5094b83-6959-4f50-b1b2-541cf83ba85e.png)
 
-docker pull は必要なくなったが、代わりに、キャッシュからのリストア `Restore docker image cache` に 20s、
+Playwright イメージの docker pull は必要なくなったが、代わりに、キャッシュからのリストア `Restore docker image cache` に 20s、
 リストアした Docker イメージのロード `Load playwright image` に 40s 程度時間がかかるようになってしまった。
 
 Docker 難しい。
