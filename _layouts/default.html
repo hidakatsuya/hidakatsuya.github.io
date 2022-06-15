@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link href="https://unpkg.com/@primer/css@^19.0.0/dist/primer.css" rel="stylesheet" />
-    <link href="/assets/css/rouge.css" rel="stylesheet" />
-    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <div class="container-md px-3 py-5 text-gray">
-      <a class="f2 text-gray-light" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    <div class="container-md px-3 py-5 color-fg-muted">
+      <a class="f2 color-fg-muted" href="{{ "/" | relative_url }}">{{ site.title }}</a>
       <span class="f4 pl-2">
         by
-        <a class="text-gray-light" href="{{ "/me/" | relative_url }}">@hidakatsuya</a>
+        <a class="color-fg-muted" href="{{ "/me/" | relative_url }}">@hidakatsuya</a>
       </span>
     </div>
     <div class="container-md px-3 mb-5 markdown-body">

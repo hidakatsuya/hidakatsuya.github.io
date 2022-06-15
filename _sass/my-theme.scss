@@ -1,0 +1,14 @@
+@import "rouge.scss";
+
+/* Fix unexpected borders being drawn on gist table */
+.gist {
+  table {
+    tr, td {
+      border: none !important;
+    }
+  }
+
+  .Box-body {
+    border-bottom: none !important;
+  }
+}
