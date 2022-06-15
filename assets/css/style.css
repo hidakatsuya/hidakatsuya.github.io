@@ -1,0 +1,9 @@
+/* Fix unexpected borders being drawn on gist table */
+.gist table tr,
+.gist table td {
+  border: none !important;
+}
+
+.gist .Box-body {
+  border-bottom: none !important;
+}
