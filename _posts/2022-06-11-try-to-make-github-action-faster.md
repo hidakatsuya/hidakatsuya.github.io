@@ -181,7 +181,12 @@ jobs:
 
 事前に、`BUNDLE_STORE_PATH` に設定したパスに対して bundle install を行い、`actions/cache` によってキャッシュする。
 キャッシュがある場合は、bundle install はせず、`actions/cache` によって `BUNDLE_STORE_PATH` にリストアされる。
-これによって`bin/setup` で bundle install を実行する必要がなくなったため、`bin/rails db:prepare` のみ明示的に実行するように変更。
+app コンテナは `BUNDLE_STORE_PATH` を `/bundle` にマウントしており、
+そのイメージ `ghcr.io/hidakatsuya/rails-dev` では、[bundle path を `/bundle` に設定している](https://github.com/hidakatsuya/docker-image-dev/blob/main/rails-dev/Dockerfile#L9)。
+```dockerfile
+RUN bundle config set --local path /bundle
+```
+これにより、bundle install を実行する必要がなくなったので `bin/rails db:prepare` のみ明示的に実行するように変更。
 
 キャッシュがある場合の実行時間は 1m30s ほど。30s 改善。
 
