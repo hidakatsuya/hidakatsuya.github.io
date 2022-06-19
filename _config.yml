@@ -8,6 +8,8 @@ timezone: Asia/Tokyo
 
 google_analytics: G-5ZV9FSDZD9
 
+remote_theme: pages-themes/primer
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

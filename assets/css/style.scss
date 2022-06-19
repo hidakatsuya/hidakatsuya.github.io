@@ -1,4 +1,13 @@
 ---
 ---
 
-@import "my-theme";
+// The primer-css used in primer-themes/primer is old and partial,
+// so the latest primer-css is used directly via CDN (see default.html).
+//
+// GitHub Pages loads primer-themes/primer if no theme is specified.
+// https://github.com/github/pages-gem/blob/8b58df6dc1e6d103e7e597e216a6410b3426aff6/lib/github-pages/configuration.rb#L19
+//
+// To prevent the style.css of the primer theme from being generated,
+// the style.scss with the same name is created,
+// and style.css is generated with the contents of _sass/primer-css-cdn.scss.
+@import "primer-css-cdn";
