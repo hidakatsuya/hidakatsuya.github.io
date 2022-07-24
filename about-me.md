@@ -27,6 +27,8 @@ PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。
 - [pdf_matcher](https://github.com/hidakatsuya/pdf_matcher) : A gem to compare two PDFs and output the differences using [diff-pdf](https://github.com/vslavik/diff-pdf)
 - [pdf_matcher-testing](https://github.com/hidakatsuya/pdf_matcher-testing) : This gem allows testing frameworks to perform PDF matching tests with the pdf_matcher
 - [setup-diff-pdf](https://github.com/hidakatsuya/setup-diff-pdf) : GitHub Action to install diff-pdf
+- [Shopping List](https://github.com/hidakatsuya/shopping_list) : A simple shopping list management application built with Rails7 and Hotwire and Tailwind CSS
+- [Shopping List Android](https://github.com/hidakatsuya/shopping_list-android) : An android app for Shopping List web built with turbo-android
 
 ## History
 
