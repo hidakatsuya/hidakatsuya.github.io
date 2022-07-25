@@ -1,8 +1,8 @@
 ---
-title: Rails と Turbo と Turbo Native for Android によるお買い物リストアプリを運用する
+title: Rails と Turbo と Turbo Native for Android によるお買い物リストアプリを開発し運用する
 ---
 
-予てより Hotwire に興味があったので、Hotwire と Rails でプライベートの実用的なアプリを作って運用することにした。
+予てより Hotwire に興味があったこともあり、Hotwire と Rails でプライベートの実用的なアプリを作って運用することにした。
 
 ## お買い物リストアプリ
 
