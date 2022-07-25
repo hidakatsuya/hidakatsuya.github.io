@@ -6,14 +6,14 @@ title: Rails と Turbo と Turbo Native for Android によるお買い物リス�
 
 ## お買い物リストアプリ
 
-題材はお買い物アプリとした。単純だし、日頃からよく使う。
+題材はお買い物アプリ。単純かつ日頃からよく使う。
 
-要件はこんなところ。
+要件
 
 - 買い物アイテムの追加、編集、削除ができる
 - 買い物アイテムを完了状態に更新できる
 - Google アカウントでサインアップ、サインインできる
-- Alexa や Google Home から音声でアイテムを追加できる（これが一番大事）
+- Alexa や Google Home から音声でアイテムを追加できる
 - モバイル(Android 12)でも快適に利用できる
 
 ## 方針
@@ -36,8 +36,8 @@ title: Rails と Turbo と Turbo Native for Android によるお買い物リス�
 https://github.com/hidakatsuya/shopping_list
 
 <div>
-  <img src="https://user-images.githubusercontent.com/739339/180660206-cd47ac88-21aa-4fac-a085-8d2b4b888c50.png" width="30%">
-  <img src="https://user-images.githubusercontent.com/739339/180660241-18e6755f-d20b-4e2f-a181-8c13fbeec0da.png" width="30%">
+  <img src="https://user-images.githubusercontent.com/739339/180660206-cd47ac88-21aa-4fac-a085-8d2b4b888c50.png" width="40%">
+  <img src="https://user-images.githubusercontent.com/739339/180660241-18e6755f-d20b-4e2f-a181-8c13fbeec0da.png" width="40%">
 </div>
 
 - Googleアカウントのサインイン・サインアップは Devise と OmniAuth Google OAuth2 Strategy で実装
@@ -67,8 +67,8 @@ https://github.com/hidakatsuya/shopping_list
 https://github.com/hidakatsuya/shopping_list-android
 
 <div>
-  <img src="https://user-images.githubusercontent.com/739339/180681717-b1600ff7-60c1-413f-9fed-0e367f48ffb9.png" width="30%">
-  <img src="https://user-images.githubusercontent.com/739339/180681757-71431e00-9c61-4f42-9149-1e8d7b8408d8.png" width="30%">
+  <img src="https://user-images.githubusercontent.com/739339/180681717-b1600ff7-60c1-413f-9fed-0e367f48ffb9.png" width="40%">
+  <img src="https://user-images.githubusercontent.com/739339/180681757-71431e00-9c61-4f42-9149-1e8d7b8408d8.png" width="40%">
 </div>
 
 - 公式の [turbo-android](https://github.com/hotwired/turbo-android) の demo アプリと公式ドキュメントがベース
