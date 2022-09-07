@@ -7,7 +7,7 @@ title: DNSの入門書を読み終えた
 
 ## 書籍
 
-<a href="https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15653039%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjowLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >DNSがよくわかる教科書 [ 株式会社日本レジストリサービス（JPRS） 渡邉結衣、 佐藤新太、 藤原和典 ]</a>
+[DNSがよくわかる教科書 [ 株式会社日本レジストリサービス（JPRS） 渡邉結衣、 佐藤新太、 藤原和典 ]](https://www.amazon.co.jp/dp/B07KQSRZ1S/ref=cm_sw_r_tw_dp_2V66DP3MESDTHVPPPQYC)
 
 割とボリュームはあるが、文章は読みやすく、終始ストレスなく読めたと思う。内容は、DNSの背景や歴史から、ドメインとの関係や管理体制や DNS の名前解決の仕組みや仕様、DNSサービスの構築から `dig` コマンドによる動作確認とセキュリティ対策まで、
 入門書として必要な内容は一通り抑えられていると思う。
