@@ -4,17 +4,20 @@ title: Ubuntu 22.04 のセッションを X.org から Wayland に移行した
 
 重い腰を上げて、メインマシン (ThinkPad X1 Carbon) の Ubuntu 22.04 を Wayland セッションに移行した。
 
-インストールは、基本的に xremap の README の手順通り。
-GNOME Shell extension は、ブラウザ拡張ではなく、[Extension Manager](https://github.com/mjakeman/extension-manager) でインストールした。
+移行に伴い、主に xremap と Ulauncher の対応が必要だった。
+
+## xremap の対応
+
+まず、xremap の README の手順に従い、GNOME Wayland 版をインストールした。
+GNOME Shell extension は、ブラウザ拡張ではなく、[Extension Manager](https://github.com/mjakeman/extension-manager) で有効化した。
 （おそらく、[GNOME Shell の不具合](https://askubuntu.com/questions/1418937/your-native-host-connector-do-not-support-following-apis-v6) が原因でインストールが不安定だったため）
 
 しばらく使ってみたところ、以下の問題が見つかった。
 
-- Gnome Terminal への設定が適用されていない
-- Files (Nautilus) や Gnome Terminal で一部動作しない
-- Ulauncher は Wayland にネイティブでは対応していない
+- Gnome Terminal の設定が適用されていない
+- Files (Nautilus) や Gnome Terminal で一部の設定が動作しない
 
-## Gnome Terminal への設定が適用されていない
+### Gnome Terminal への設定が適用されていない
 
 Gnome Terminal の `WM_CLASS` が X11 と異なるため。再度 Gnome Terminal の `WM_CLASS` を取得して変更した。
 
@@ -38,7 +41,7 @@ busctl --user call org.gnome.Shell /com/k0kubun/Xremap com.k0kubun.Xremap WMClas
 sleep 3 && busctl --user call org.gnome.Shell /com/k0kubun/Xremap com.k0kubun.Xremap WMClass
 ```
 
-## Files (Nautilus) や Gnome Terminal で一部動作しない
+### Files (Nautilus) や Gnome Terminal で一部動作しない
 
 おそらく https://github.com/k0kubun/xremap/issues/179 によるもの。issue で追加されたワークアラウンドの `keypress_delay_ms` を設定することで対応できた。
 
@@ -60,11 +63,15 @@ sleep 3 && busctl --user call org.gnome.Shell /com/k0kubun/Xremap com.k0kubun.Xr
       M-f: C-f
 ```
 
-## Ulauncher は Wayland にネイティブでは対応していない
+## Ulauncher の対応
+
+`Ctrl+Space` に割り当てた Ulauncher が動作しなかった。
 
 > https://github.com/Ulauncher/Ulauncher/wiki/Hotkey-In-Wayland
 > Ulauncher in Wayland does not receive hotkey events when triggered from some windows (like terminal or OS Settings).
+ 
+上記記事の通り、Wayland で利用するには設定が必要とのこと。
 
-上記記事の対応手順によって引き続き使うこともできるが、GNOME の Activities を `Ctrl+Space` に割り当てて使ってみることにした。
+記事の手順によって引き続き使うこともできるが、Ulauncher をやめ、GNOME の Activities を `Ctrl+Space` に割り当てて使ってみることにした。
 しっくりこなければ、Ulauncher か別の選択肢を検討することにする。
 
