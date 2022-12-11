@@ -43,7 +43,7 @@ sleep 3 && busctl --user call org.gnome.Shell /com/k0kubun/Xremap com.k0kubun.Xr
 
 ### Files (Nautilus) や Gnome Terminal で一部動作しない
 
-おそらく https://github.com/k0kubun/xremap/issues/179 によるもの。issue で追加されたワークアラウンドの `keypress_delay_ms` を設定することで対応できた。
+おそらく https://github.com/k0kubun/xremap/issues/179 によるもの。追加されたワークアラウンドの `keypress_delay_ms` の設定を追加して対応した。
 
 ```diff
 +# Workaround for https://github.com/k0kubun/xremap/issues/179
