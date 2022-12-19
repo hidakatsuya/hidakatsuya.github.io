@@ -31,7 +31,7 @@ Google Cloud Platform は何もわからない状態だったので、まずは�
 
 ## 全体の構成
 
-![gcp-shopping-list-structure](https://user-images.githubusercontent.com/739339/208452330-253e38f4-157e-435d-8b1a-063a400d596d.png)
+[![gcp-shopping-list-structure](https://user-images.githubusercontent.com/739339/208452330-253e38f4-157e-435d-8b1a-063a400d596d.png)](https://user-images.githubusercontent.com/739339/208452330-253e38f4-157e-435d-8b1a-063a400d596d.png)
 
 - Cloud SQL の無料枠はないので、Compute Engine (e2-micro) で PostgreSQL を動かす
   - 設定が面倒だったので、[こちら](https://joncloudgeek.com/blog/deploy-postgres-container-to-compute-engine/) を参考に PostgreSQL コンテナをデプロイして構築した
@@ -79,5 +79,5 @@ Cloud Build の webhook トリガーを叩く
 - 概ねいい感じに動いている
 - 90日間のクレジットがある間に実際の費用を検証したいのだが、クレジットを適用しない場合の実際の費用を確認する方法がいまいちわからない。お支払い画面難しくない？
 - IAM をみると「過剰な権限」の警告が大量に発生しているので整理する
-- [公式ガイド](https://cloud.google.com/docs/terraform) を参考に Terraform で構成を管理してみる
+- [公式ガイド](https://cloud.google.com/docs/terraform) を参考に Terraform で構成を管理しようとしている
 - と、いろいろやりたいことは残っているが、ひとまず環境構築はこのぐらいにして Shopping List アプリの機能追加を進めたい
