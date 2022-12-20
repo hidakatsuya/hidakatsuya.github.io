@@ -5,13 +5,13 @@ title: Shopping List アプリの環境を Google Cloud Platform 上に構築し
 Heroku で運用していた Shopping List アプリを Google Cloud Platform に移行した。
 
 Google Cloud Platform は今回初めて触るため、まずは公式ガイドの [Cloud Run 環境での Rails の実行](https://cloud.google.com/ruby/rails/run?hl=ja)
-に従って動くものを構築し、それをベースに手を加えていく形で進めることにした。また、情報源も GCP の公式ガイドやサンプルなど、公式の情報に絞って構築するようにした。
+に従って動くものを構築し、それをベースに手を加えていく形で進めることにした。また、情報源も GCP の公式ガイドやサンプルなど、極力公式の情報に絞って構築するようにした。
 
 ## Shopping List
 
 個人用のお買い物リストアプリ。実際にほぼ毎日使っている。機能や構成は
 [Rails と Turbo と Turbo Native for Android によるお買い物リストアプリを開発し運用する](2022-07-25-create-shopping-list-web-and-android-app-with-turbo.md)
-の記事から基本的には変わっていない。
+のときから基本的には変わっていない。
 
 - [hidakatsuya/shopping_list](https://github.com/hidakatsuya/shopping_list)
   - Webアプリと REST API
