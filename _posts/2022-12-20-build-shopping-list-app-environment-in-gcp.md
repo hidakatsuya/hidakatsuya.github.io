@@ -4,8 +4,8 @@ title: Shopping List アプリの環境を Google Cloud Platform 上に構築し
 
 Heroku で運用していた Shopping List アプリを Google Cloud Platform に移行した。
 
-Google Cloud Platform は何もわからない状態だったので、まずは公式ガイドの [Cloud Run 環境での Rails の実行](https://cloud.google.com/ruby/rails/run?hl=ja)
-に従って動くものを構築し、それをベースに手を加えていく形で進めることにした。また、基本的に GCP の公式ガイドやサンプルに従って構築するようにした。
+Google Cloud Platform は今回初めて触るため、まずは公式ガイドの [Cloud Run 環境での Rails の実行](https://cloud.google.com/ruby/rails/run?hl=ja)
+に従って動くものを構築し、それをベースに手を加えていく形で進めることにした。また、情報源も GCP の公式ガイドやサンプルなど、公式の情報に絞って構築するようにした。
 
 ## Shopping List
 
@@ -24,10 +24,10 @@ Google Cloud Platform は何もわからない状態だったので、まずは�
 
 ## 方針
 
-- 無料枠を最大限使い、可能な限り運用コストを0円にする
+- 無料枠を最大限使い、可能な限り運用コストを減らすことにトライする
 - 引き続きコードは public リポジトリに置く
 - 環境構築に必要な設定は可能な限りコードで管理する
-- Slack からデプロイできるようにする
+- Slack からデプロイの指示や状況の取得ができるようにする
 
 ## 全体の構成
 
@@ -43,7 +43,6 @@ Google Cloud Platform は何もわからない状態だったので、まずは�
 ## Shopping List アプリの構成
 
 - 機密情報の管理は `credentials.yml.enc` を使わない
-  - 引き続きコードは public リポジトリに置いて開発する方針のため
 - 必要な機密情報やパラメータはすべて Secret Manager で管理
 - 本番イメージ用の Dockerfile を用意
   - https://github.com/hidakatsuya/shopping_list/blob/main/Dockerfile
@@ -68,16 +67,18 @@ Cloud Build の webhook トリガーを叩く
 
 - Cloud Build の通知を Slack に流す
 - Cloud Build のイベントは `cloud-builds` トピックに push される
-- その `cloud-buids` トピックに向けた Pub/Sub をトリガーに Cloud Functions を実行し、受け取った通知を Slack Webhook 経由で Slack に流す
+- その `cloud-builds` トピックに向けた Pub/Sub をトリガーに Cloud Functions を実行し、受け取った通知を Slack Webhook 経由で Slack に流す
 - Cloud Functions のコードは [hidakatsuya/gcp-cloud-build-slack-notifier](https://github.com/hidakatsuya/gcp-cloud-build-slack-notifier) においてある
 - ちなみに、この Cloud Functions のデプロイも、前述の Slash コマンドから実行できる。こちらのデプロイ状況も Slack に通知される
   ```
-  /cloud-build cloud-build-notifier` 
+  /cloud-build cloud-build-notifier
   ```
+
 ## まとめ
 
 - 概ねいい感じに動いている
 - 90日間のクレジットがある間に実際の費用を検証したいのだが、クレジットを適用しない場合の実際の費用を確認する方法がいまいちわからない。お支払い画面難しくない？
 - IAM をみると「過剰な権限」の警告が大量に発生しているので整理する
 - [公式ガイド](https://cloud.google.com/docs/terraform) を参考に Terraform で構成を管理しようとしている
+- ネットワークの基礎を復習したくなったので「ネットワークがよくわかる教科書」を読み始めた
 - と、いろいろやりたいことは残っているが、ひとまず環境構築はこのぐらいにして Shopping List アプリの機能追加を進めたい
