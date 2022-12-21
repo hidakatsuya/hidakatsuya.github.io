@@ -24,6 +24,10 @@ relative_links:
 gist:
   noscript: false
 
+twitter:
+  username: hidakatsuya
+  card: summary
+
 markdown: CommonMarkGhPages
 commonmark:
   options:
