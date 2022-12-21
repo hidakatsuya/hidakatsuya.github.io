@@ -1,5 +1,6 @@
 ---
 title: Shopping List アプリの環境を Google Cloud Platform 上に構築して運用する
+image: https://user-images.githubusercontent.com/739339/208452330-253e38f4-157e-435d-8b1a-063a400d596d.png
 ---
 
 Heroku で運用していた Shopping List アプリを Google Cloud Platform に移行した。
