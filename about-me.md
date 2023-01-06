@@ -16,7 +16,6 @@ Katsuya HIDAKA
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 - [Stack Overflow](https://stackoverflow.com/users/1160252/hidakatsuya)
 - [asciinema](https://asciinema.org/~hidakatsuya)
-- [AtCoder](https://atcoder.jp/users/hidakatsuya)
 
 PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
 
