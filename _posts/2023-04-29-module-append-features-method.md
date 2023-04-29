@@ -2,7 +2,7 @@
 title: Module#append_features と Module#<
 ---
 
-ふと `ActiveSupport::Concern` が base クラスにメソッドなどを定義する流れが気になってコードを読んでいると、いくつか新しい発見があった。
+`ActiveSupport::Concern` が base クラスにメソッドなどを定義する流れが気になってコードを読んだときに、いくつか新しい発見があった。
 
 ## Module#append_features
 
@@ -23,7 +23,7 @@ https://docs.ruby-lang.org/ja/latest/method/Module/i/append_features.html
 
 試してみたところ、確かに `Module#include` の実体っぽい。
 
-```
+```irb
 $ irb
 irb(main):001:1* module M
 irb(main):002:2*   def self.append_features(base)
