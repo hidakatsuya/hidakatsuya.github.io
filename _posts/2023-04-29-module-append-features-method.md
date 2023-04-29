@@ -2,26 +2,26 @@
 title: Module#append_features と Module#<
 ---
 
-`ActiveSupport::Concern` が base クラスにメソッドなどを定義する流れが気になってコードを読んだときに、いくつか新しい発見があった。
+Rails の `ActiveSupport::Concern` が、モジュールの内容を base クラスに定義するまでの流れが気になったのでコードを読んでいた。その際に、いくつかの新しい発見があった。
 
 ## Module#append_features
 
-`ActiveSupport::Concern` は読んでみると `append_features` メソッドに辿り着く。
+コードを読むと、最終的に `append_features` メソッドに辿り着く。
 https://github.com/rails/rails/blob/912096d4ce930b8e7e5d91e0c86bae2091fda0e4/activesupport/lib/active_support/concern.rb#L129
 
-このメソッドの下記の箇所が該当すると思われたが、`append_features` メソッドをどこでコールしているかがわからない。
+このメソッドの下記の箇所で定義していることは分かったが、`append_features` メソッドをどこでコールしているかがわからない。
 ```ruby
 base.class_eval(&@_included_block)
 ```
 https://github.com/rails/rails/blob/912096d4ce930b8e7e5d91e0c86bae2091fda0e4/activesupport/lib/active_support/concern.rb#LL138C29-L138C29
 
-で、調べてみると、どうやらこれは Ruby のメソッドらしい。新しいメソッドではなく、少なくとも Ruby 2.0 からある。
+調べてみると、どうやらこれは Ruby のメソッドのようだった。新しいメソッドではなく、少なくとも Ruby 2.0 からある。
 
 https://docs.ruby-lang.org/ja/latest/method/Module/i/append_features.html
 > モジュール(あるいはクラス)に self の機能を追加します。
 > このメソッドは Module#include の実体であり、
 
-試してみたところ、確かに `Module#include` の実体っぽい。
+実際に試してみたところ、確かに `Module#include` の実体のような動きをしている。
 
 ```irb
 $ irb
