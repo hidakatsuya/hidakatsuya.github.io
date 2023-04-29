@@ -12,6 +12,7 @@ Katsuya HIDAKA
 
 - [My logs - Tech and life logs, my profile, etc](/)
 - [GitHub](https://github.com/hidakatsuya)
+- [Gist](https://gist.github.com/hidakatsuya)
 - [Twitter](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 - [Stack Overflow](https://stackoverflow.com/users/1160252/hidakatsuya)
