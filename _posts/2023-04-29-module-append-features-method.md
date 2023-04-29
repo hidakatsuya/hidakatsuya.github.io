@@ -24,7 +24,6 @@ https://docs.ruby-lang.org/ja/latest/method/Module/i/append_features.html
 実際に試してみたところ、確かに `Module#include` の実体のような動きをしている。
 
 ```irb
-$ irb
 irb(main):001:1* module M
 irb(main):002:2*   def self.append_features(base)
 irb(main):003:3*     base.class_eval do
@@ -45,8 +44,7 @@ m_method
 
 `Module#include` が評価されるときに、`append_features` が呼ばれている。
 
-```
-$ irb
+```irb
 irb(main):001:1* module M
 irb(main):002:2*   def self.append_features(base)
 irb(main):003:2*     puts 'append_features called'
@@ -77,8 +75,7 @@ https://github.com/rails/rails/blob/912096d4ce930b8e7e5d91e0c86bae2091fda0e4/act
 
 https://docs.ruby-lang.org/ja/latest/method/Module/i/=3c.html
 
-```
-$ irb
+```irb
 irb(main):001:1* module M
 irb(main):002:0> end
 => nil
