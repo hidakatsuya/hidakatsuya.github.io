@@ -12,12 +12,12 @@ Katsuya HIDAKA
 
 - [My logs - Tech and life logs, my profile, etc](/)
 - [GitHub](https://github.com/hidakatsuya)
-- [Gist](https://gist.github.com/hidakatsuya)
 - [Twitter](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 - [Stack Overflow](https://stackoverflow.com/users/1160252/hidakatsuya)
-- [asciinema](https://asciinema.org/~hidakatsuya)
 - [Scrapbox](https://scrapbox.io/hidakatsuya/)
+- Others: [Gist](https://gist.github.com/hidakatsuya) / [asciinema](https://asciinema.org/~hidakatsuya) / [CodePen](https://codepen.io/hidakatsuya)
+
 
 PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
 
