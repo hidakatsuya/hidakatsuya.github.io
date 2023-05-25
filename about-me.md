@@ -16,6 +16,7 @@ Katsuya HIDAKA
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 - [Stack Overflow](https://stackoverflow.com/users/1160252/hidakatsuya)
 - [Scrapbox](https://scrapbox.io/hidakatsuya/)
+- [Google Developer Profile](https://developers.google.com/profile/u/hidakatsuya)
 - Others: [Gist](https://gist.github.com/hidakatsuya) / [asciinema](https://asciinema.org/~hidakatsuya) / [CodePen](https://codepen.io/hidakatsuya)
 
 
