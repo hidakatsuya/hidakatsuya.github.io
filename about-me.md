@@ -29,7 +29,8 @@ PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。
 - [flexdot (Ruby)](https://github.com/hidakatsuya/flexdot) : A Flexible and Rake based dotfile manager
 - [pdf_matcher (Ruby)](https://github.com/hidakatsuya/pdf_matcher) : A gem to compare two PDFs and output the differences using [diff-pdf](https://github.com/vslavik/diff-pdf)
 - [pdf_matcher-testing (Ruby)](https://github.com/hidakatsuya/pdf_matcher-testing) : This gem allows testing frameworks to perform PDF matching tests with the pdf_matcher
-- [setup-diff-pdf](https://github.com/hidakatsuya/setup-diff-pdf) : GitHub Action to install diff-pdf
+- [action-setup-diff-pdf (JavaScript)](https://github.com/hidakatsuya/action-setup-diff-pdf) : A GitHub Action to install diff-pdf
+- [action-report-android-lint (JavaScript)](https://github.com/hidakatsuya/action-report-android-lint) : A GitHub Action to check and report the results of Android Lint in Job Summaries
 - [Shopping List (Rails)](https://github.com/hidakatsuya/shopping_list) : A simple shopping list management application built with Rails7 and Hotwire and Tailwind CSS
 - [Shopping List Android (Kotlin)](https://github.com/hidakatsuya/shopping_list-android) : An android app for Shopping List web built with turbo-android
 - [Shopping List CLI (Go)](https://github.com/hidakatsuya/shopping_list-cli) : A command line interface for Shopping List
