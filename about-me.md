@@ -39,11 +39,13 @@ PDFライブラリ [Thinreports](https://github.com/thinreports) の作者。202
 
 - 自社サービスの設計・開発・運用
 - Ruby, Kotlin, JavaScript, TypeScript, Rails, Android, Vue.js, AWS
+- フルリモートワーク
 
 ### 2015.10-2020.06 株式会社Misoca
 
 - 自社サービスの設計・開発・運用
 - Ruby, JavaScript, TypeScript, Rails, Vue.js, AWS
+- フルリモートワーク
 
 ### 2003.05-2015.09 株式会社マツケイ
 
