@@ -19,28 +19,36 @@ Katsuya HIDAKA
 - [Google Developer Profile](https://developers.google.com/profile/u/hidakatsuya)
 - Others: [Gist](https://gist.github.com/hidakatsuya) / [asciinema](https://asciinema.org/~hidakatsuya) / [CodePen](https://codepen.io/hidakatsuya)
 
-
-PDFライブラリ [Thinreports](https://github.com/thinreports) の開発者。Thinreports とその周辺・依存ライブラリの開発やメンテナンスを行う。Ruby ときどき JavaScript, TypeScript, PHP。2015年から現在までフルリモートワーク。
+PDFライブラリ [Thinreports](https://github.com/thinreports) の作者。2023年までは Web アプリケーションエンジニア、2023年より Android エンジニアを中心に活動。プライベートでは、Thinreports とその周辺・依存ライブラリの開発やメンテナンス、Android アプリの開発を行う。
 
 ## Products
 
-- [Thinreports (Ruby / Typescript / Vue.js)](https://github.com/thinreports/thinreports) : A PDF generation tools for Ruby
+- [Thinreports (Ruby, Typescript, Vue.js)](https://github.com/thinreports/thinreports) : A PDF generation tools for Ruby
 - [prawn-emoji (Ruby)](https://github.com/hidakatsuya/prawn-emoji) : An extension that add Emoji support to [Prawn](https://github.com/prawnpdf/prawn)
 - [flexdot (Ruby)](https://github.com/hidakatsuya/flexdot) : A Flexible and Rake based dotfile manager
 - [pdf_matcher (Ruby)](https://github.com/hidakatsuya/pdf_matcher) : A gem to compare two PDFs and output the differences using [diff-pdf](https://github.com/vslavik/diff-pdf)
 - [pdf_matcher-testing (Ruby)](https://github.com/hidakatsuya/pdf_matcher-testing) : This gem allows testing frameworks to perform PDF matching tests with the pdf_matcher
 - [action-setup-diff-pdf (JavaScript)](https://github.com/hidakatsuya/action-setup-diff-pdf) : A GitHub Action to install diff-pdf
 - [action-report-android-lint (JavaScript)](https://github.com/hidakatsuya/action-report-android-lint) : A GitHub Action to check and report the results of Android Lint in Job Summaries
-- [Shopping List (Rails)](https://github.com/hidakatsuya/shopping_list) : A simple shopping list management application built with Rails7 and Hotwire and Tailwind CSS
-- [Shopping List Android (Kotlin)](https://github.com/hidakatsuya/shopping_list-android) : An android app for Shopping List web built with turbo-android
-- [Shopping List CLI (Go)](https://github.com/hidakatsuya/shopping_list-cli) : A command line interface for Shopping List
-- [gsm_env (Ruby)](https://github.com/hidakatsuya/gsm_env) : A gem to set parameters obtained from GCP Secret Manager as environment variables
+- [Shopping List (Kotlin, Jetpack Compose)](https://github.com/hidakatsuya/ShoppingList) : An Android app built with Jetpack Compose and M3 to manage what to buy
+- Shopping List [Web (Hotwire)](https://github.com/hidakatsuya/shopping_list) / [Android (Kotlin, turbo-android)](https://github.com/hidakatsuya/shopping_list-android) / [CLI (Go)](https://github.com/hidakatsuya/shopping_list-cli) : A simple shopping list management applications
 
 ## History
 
-- 2020.07 弥生株式会社 (合併による転籍)
-- 2015.10 株式会社Misoca
-- 2003.05 株式会社マツケイ
+### 2020.07-* 弥生株式会社
+
+- 自社サービスの設計・開発・運用
+- Ruby, Kotlin, JavaScript, TypeScript, Rails, Android, Vue.js, AWS
+
+### 2015.10-2020.06 株式会社Misoca
+
+- 自社サービスの設計・開発・運用
+- Ruby, JavaScript, TypeScript, Rails, Vue.js, AWS
+
+### 2003.05-2015.09 株式会社マツケイ
+
+- Webアプリケーション及びインフラの設計・開発・運用
+- Ruby, PHP, Rails, MySQL, CentOS, RedHat
 
 ## Presentations
 
