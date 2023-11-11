@@ -19,7 +19,7 @@ Katsuya HIDAKA
 - [Google Developer Profile](https://developers.google.com/profile/u/hidakatsuya)
 - Others: [Gist](https://gist.github.com/hidakatsuya) / [asciinema](https://asciinema.org/~hidakatsuya) / [CodePen](https://codepen.io/hidakatsuya)
 
-主に Web アプリケーションエンジニアとして活動。主に Rails によるバックエンド開発が得意。2023年からは Android エンジニアとしても活動している。プライベートでは、作者でもある [Thinreports](https://github.com/thinreports) とその周辺・依存ライブラリの開発やメンテナンス、Android アプリの開発を行っている。
+2023年までは主に Webアプリケーションエンジニアとして活動。Rails が得意。2023年からは Android エンジニアとして活動を開始。プライベートでは、[Thinreports](https://github.com/thinreports) とその周辺・依存ライブラリの開発やメンテナンス、Android アプリを作っている。
 
 ## Products
 
