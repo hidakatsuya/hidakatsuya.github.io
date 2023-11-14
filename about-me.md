@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "@hidakatsuya"
+title: About me
 permalink: /me/
 ---
 
