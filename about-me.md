@@ -10,7 +10,7 @@ permalink: /me/
 
 Katsuya HIDAKA
 
-- [My logs - Tech and life logs, my profile, etc](/)
+- [hidakatsuya.dev](/)
 - [GitHub](https://github.com/hidakatsuya)
 - [X (Twitter)](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
