@@ -10,12 +10,11 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="container-md px-3 py-5 color-fg-muted">
+    <div class="container-md px-3 py-5 color-fg-muted clearfix">
       <a class="f2 color-fg-muted" href="{{ "/" | relative_url }}">{{ site.title }}</a>
-      <span class="f4 pl-2">
-        by
-        <a class="color-fg-muted" href="{{ "/me/" | relative_url }}">@hidakatsuya</a>
-      </span>
+      <a class="color-fg-muted float-right profile-icon" href="{{ "/me/" | relative_url }}">
+        {% avatar hidakatsuya size=32 %}
+      </a>
     </div>
     <div class="container-md px-3 mb-5 markdown-body">
       {{ content }}
