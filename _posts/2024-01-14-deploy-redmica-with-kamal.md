@@ -6,8 +6,9 @@ Kamal を試した。
 
 ## Kamal
 
-Basecamp社が開発した Docker イメージ版の Capistrano
 https://kamal-deploy.org/
+
+Basecamp 社が開発した Docker コンテナ版 [Capistrano](https://capistranorb.com/) と言ったところ。
 
 ## RedMica
 
