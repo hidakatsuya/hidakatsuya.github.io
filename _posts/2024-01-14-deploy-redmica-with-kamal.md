@@ -18,7 +18,7 @@ Basecamp 社が開発した Docker コンテナ版 [Capistrano](https://capistra
 
 ## EC2 にデプロイする
 
-デプロイ先の環境は非常に次の通り。シンプル。
+デプロイ先の環境は非常にシンプル。
 
 ![aws](https://github.com/hidakatsuya/hidakatsuya.github.io/assets/739339/8ec36760-6ea4-4b21-85e4-e2d0f7e52574)
 
