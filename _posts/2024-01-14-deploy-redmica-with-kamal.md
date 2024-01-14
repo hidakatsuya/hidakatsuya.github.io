@@ -13,8 +13,7 @@ https://kamal-deploy.org/
 
 ちょうど [RedMica の公式 Docker イメージ](https://hub.docker.com/r/redmica/redmica/) があることを知ったので、RedMica をデプロイすることにする。
 
-RedMica は Redmine 互換の OSS で Rails で作られている。
-https://www.redmica.jp/
+[RedMica](https://www.redmica.jp/) は Redmine 互換の OSS で Rails で作られている。
 
 ## EC2 にデプロイする
 
@@ -32,8 +31,8 @@ https://www.redmica.jp/
 
 ### healthcheck
 
-Kamal は、デフォルトでは `/up` でヘルスチェックを行う。しかし、RedMica v2.4.0 時点では Rails6 ベースであるため、 `/up` は存在しない。
-ひとまず `/login` をヘルスチェック先として設定した。
+Kamal は、デフォルトでは `/up` でヘルスチェックを行う。しかし、RedMica v2.4.0 時点では `/up` は存在しない (Rails 6 ベースなので）。
+今回は `/login` をヘルスチェック先として設定した。
 
 ```yaml
 healthcheck:
@@ -41,7 +40,7 @@ healthcheck:
   port: 3000
 ```
 
-### Debianベースディストリビューション
+### Debian ベースのディストリビューション
 
 Kamal は、Docker や curl などの必要なコマンドを自動的にインストールする機能を持っている。
 この機能を使うためには、Debian ベースの OS である必要がある。`apt-get` でインストールするため。
@@ -50,5 +49,5 @@ Kamal は、Docker や curl などの必要なコマンドを自動的にイン�
 
 ## まとめ
 
-とても便利。GitHub Actions などによるデプロイツールとしても使える。
-しかし、実際にプロダクション環境で使う場合は、Kamal のアーキテクチャを理解する必要があると感じた。
+とても便利。GitHub Actions 等から実行することも想定されている。
+しかし、実際にプロダクション環境で使う場合は、Kamal のアーキテクチャをしっかり理解する必要があると感じた（まだよくわかってない）。
