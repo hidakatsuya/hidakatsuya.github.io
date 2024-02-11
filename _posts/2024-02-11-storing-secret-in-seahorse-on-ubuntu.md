@@ -6,11 +6,13 @@ title: OpenAI の API key などの機密情報を Passwords and Keys に保存�
 
 OpenAI の APIキーは [公式ドキュメント](https://platform.openai.com/docs/quickstart?context=node) に従い、`~/.bashrc` に環境変数として定義していた。
 
-```
+```bash
 export OPENAI_API_KEY='your-api-key-here'
 ```
 
 しかし、`~/.bashrc` は dotfiles の管理化にあるため、API キーを含めることはできない。
+
+なお、OS は Ubuntu 22.04 LTS でシェルは bash を使っている。
 
 ## Passwords and Keys (Seahorse) に保存する
 
