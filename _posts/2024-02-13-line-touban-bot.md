@@ -33,7 +33,8 @@ title: 猫のトイレ掃除当番を教えてくれる LINE Bot を Cloudflare 
 
 ## 実装
 
-以下の GitHub レポジトリを参照
+以下の GitHub レポジトリに全て公開してある。
+
 https://github.com/hidakatsuya/line-touban-bot
 
 ## 実装時につまづいた点、気になった点
@@ -51,3 +52,5 @@ https://github.com/hidakatsuya/line-touban-bot
 - 今の所いい感じに動いている。業務も改善した
 - 薄々気づいていたけど、今日/明日の当番を問い合わせる機能は不要だったかも。誰も使ってない...
 - Cloudflare Workers は本当に便利で簡単。もっといろいろ使いたい
+- テストコードはほとんどが GitHub Copilot に書いてもらったコードを使っているので、一部冗長なコードがあるがこれで十分
+- 後から知ったが、テストや開発向けに Cloudflare Workers をエミュレートすることができる [Miniflare](https://miniflare.dev/) というものがあるらしい。この bot を作っているときは、テスト用のグループを用意して実際に動かしながら行ったけど、これを使えばその辺りの手間を減らすことができそう。元気があれば、これを使ったテストコードに書き換えようかな
