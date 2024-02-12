@@ -45,3 +45,9 @@ https://github.com/hidakatsuya/line-touban-bot
   - [ドキュメント](https://developers.line.biz/ja/reference/messaging-api/#send-push-message) を読んでも対応していないように見える
 - 当初は GAS を使おうとしたが、何らかの技術的な理由によって断念した
   - 理由は忘れた...
+
+## まとめ
+
+- 今の所いい感じに動いている。業務も改善した
+- 薄々気づいていたけど、今日/明日の当番を問い合わせる機能は不要だったかも。誰も使ってない...
+- Cloudflare Workers は本当に便利で簡単。もっといろいろ使いたい
