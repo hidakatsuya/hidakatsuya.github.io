@@ -38,12 +38,10 @@ https://github.com/hidakatsuya/line-touban-bot
 
 ## 実装時につまづいた点、気になった点
 
-- [LINE Messaing API SDK](https://github.com/line/line-bot-sdk-nodejs) があるが、SDK v8.4.0 時点では Cloudflare Workers では使えない
-  - "stream" や "querystring" などの Node.js パッケージのロードで失敗するため。
-Cloudflare Workers のランタイムは Node.js ではなく、[いくつかの Node.js API を互換サポートしている](https://developers.cloudflare.com/workers/runtime-apis/nodejs/)。
-また、Node.js API を import するときは "node:" プレフィックスが必要。
-しかし、LINE SDK では "node:" プレフィックスを指定していないため、インポートできずにエラーが発生している
+- [LINE Messaing API SDK](https://github.com/line/line-bot-sdk-nodejs) は、v8.4.0 時点で Cloudflare Workers では使えない
+  - "stream" や "querystring" などの Node.js パッケージのロードで失敗することが原因
+  - Cloudflare Workers のランタイムは Node.js ではなく、[いくつかの Node.js API を互換サポートしている](https://developers.cloudflare.com/workers/runtime-apis/nodejs/)。また、Node.js API を import するときは "node:" プレフィックスが必要。しかし、LINE SDK では "node:" プレフィックスを指定していないため、インポートできない
 - メッセージにメンションを含めることができない（たぶん）
   - [ドキュメント](https://developers.line.biz/ja/reference/messaging-api/#send-push-message) を読んでも対応していないように見える
 - 当初は GAS を使おうとしたが、何らかの技術的な理由によって断念した
-  - 理由を思い出せない...
+  - 理由は忘れた...
