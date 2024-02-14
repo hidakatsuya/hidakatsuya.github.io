@@ -33,9 +33,14 @@ title: 猫のトイレ掃除当番を教えてくれる LINE Bot を Cloudflare 
 
 ## 実装
 
-以下の GitHub レポジトリに全て公開してある。
+以下の GitHub レポジトリを参照
 
 https://github.com/hidakatsuya/line-touban-bot
+
+- Cloudflare Workers (wrangler-sdk)
+- TypeScript
+- Vitest (test)
+- Biome (linter)
 
 ## 実装時につまづいた点、気になった点
 
