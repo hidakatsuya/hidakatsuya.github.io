@@ -26,7 +26,7 @@ title: 現在読んでいる本と読む目的
 
 ### [A Philosophy of Software Design, 2nd Edition](https://www.amazon.co.jp/-/en/John-Ousterhout/dp/1732102201)
 
-[fukabori.fm のエピソード](https://fukabori.fm/episode/100) にて興味を持ったため。特に、Deep/Shallow モジュールの下りは興味深く、自身のコーディングに取り入れたいと感じたため。現在進めている英語学習の教材としても活用（エピソード中で「きれいな英語で読みやすい」と言及されている。実際に読みやすいと感じる）。
+[fukabori.fm のエピソード](https://fukabori.fm/episode/100) を聴いて、Deep/Shallow モジュールの下りを詳しく知りたいと思ったため。また、現在進めている英語学習の教材としても活用するため（エピソード中で「きれいな英語で読みやすい」と言及されている。実際に読みやすい）。
 
 ## チーム開発
 
