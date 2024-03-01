@@ -4,7 +4,7 @@ title: 現在読んでいる本と読む目的
 
 この一ヶ月で読んでいる（または読んだ）本と、なぜそれを読むのかについて書く。
 
-## 技術系
+## 技術、チーム開発
 
 ### [エンジニアリング組織論への招待　不確実性に向き合う思考と組織のリファクタリング](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15341337%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
 
@@ -15,20 +15,6 @@ title: 現在読んでいる本と読む目的
 
 プロダクトを前に進めるためのコードを書く、または改善するための引き出しを増やすため。また、なぜそのコードにしたのかを説明できるようにするため。
 加えて、これまでの「オレオレプラクティス」や経験の答え合わせを行い、それぞれに名前を付けたり、間違った、あるいは改善の余地がある固定観念を更新するため。
-
-### [Linuxのしくみ - 実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17283024%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
-
-メモリがどのように管理され、どのような問題が生じる可能性があるのか、そしてその周辺を改めて理解し、Webアプリケーションの開発や運用における問題解決を行うための引き出しを増やすため。
-
-### [Java言語で学ぶデザインパターン入門](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16908395%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
-
-同上。加えて、デザインパターンの概要や目的をすぐに引くことができるようにしておくことで、開発時のコミュニケーションを円滑にするため。
-
-### [A Philosophy of Software Design, 2nd Edition](https://www.amazon.co.jp/-/en/John-Ousterhout/dp/1732102201)
-
-[fukabori.fm のエピソード](https://fukabori.fm/episode/100) を聴いて、Deep/Shallow モジュールの下りを詳しく知りたいと思ったため。また、現在進めている英語学習の教材としても活用するため（エピソード中で「きれいな英語で読みやすい」と言及されている。実際に読みやすい）。
-
-## チーム開発
 
 ### [SCRUM BOOT CAMP THE BOOK](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16284702%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
 
@@ -41,6 +27,18 @@ title: 現在読んでいる本と読む目的
 ### [LISTEN](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16810960%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
 
 同上。質問するためには聴くことが必要。[テレ東BIZの YouTube での紹介](https://youtu.be/LaYkv_Tl-Ec?si=rd2XlkgLFAF-kKjf) で興味を持ったことがきっかけ。
+
+### [Linuxのしくみ - 実験と図解で学ぶOS、仮想マシン、コンテナの基礎知識](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17283024%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
+
+メモリがどのように管理され、どのような問題が生じる可能性があるのか、そしてその周辺を改めて理解し、Webアプリケーションの開発や運用における問題解決を行うための引き出しを増やすため。
+
+### [Java言語で学ぶデザインパターン入門](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16908395%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
+
+同上。加えて、デザインパターンの概要や目的をすぐに引くことができるようにしておくことで、開発時のコミュニケーションを円滑にするため。
+
+### [A Philosophy of Software Design, 2nd Edition](https://www.amazon.co.jp/-/en/John-Ousterhout/dp/1732102201)
+
+[fukabori.fm のエピソード](https://fukabori.fm/episode/100) を聴いて、Deep/Shallow モジュールの下りを詳しく知りたいと思ったため。また、現在進めている英語学習の教材としても活用するため（エピソード中で「きれいな英語で読みやすい」と言及されている。実際に読みやすい）。
 
 ## その他
 
