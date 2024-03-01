@@ -36,7 +36,7 @@ title: 現在読んでいる本と読む目的
 
 ### [問いかけの作法](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16959719%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
 
-チーム開発や組織運営で効率的かつ負担の少ないコミュニケーションをするため。これまでの経験から、自身にとって、的確な質問はコミュニケーションの負担軽減や人間関係を良好にするために最も必要。
+チーム開発や組織運営で効率的かつ負担の少ないコミュニケーションをするため。これまでの経験からも、自身にとって的確な質問は、コミュニケーションの負担軽減や人間関係を良好にするために最も大切。
 
 ### [LISTEN](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F16810960%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
 
@@ -50,4 +50,4 @@ title: 現在読んでいる本と読む目的
 
 ### [汝、星のごとく](https://hb.afl.rakuten.co.jp/ichiba/2304902d.f05c26bc.2304902e.7c640b7c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17202261%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9)
 
-「星を編む」を読むにあたり、読み返したくなったため。元々 [Audible版](https://www.audible.co.jp/pd/%E6%B1%9D%E3%80%81%E6%98%9F%E3%81%AE%E3%81%94%E3%81%A8%E3%81%8F-%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%96%E3%83%83%E3%82%AF/B0BGKDKM1D?action_code=ASSGB149080119000H&share_location=pdp) で聴いたことしかなかったことから書籍版を入手。
+「星を編む」を読むにあたり、読み返したくなったため。元々 [Audible版](https://www.audible.co.jp/pd/%E6%B1%9D%E3%80%81%E6%98%9F%E3%81%AE%E3%81%94%E3%81%A8%E3%81%8F-%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%96%E3%83%83%E3%82%AF/B0BGKDKM1D?action_code=ASSGB149080119000H&share_location=pdp) で聴いたことしかなかったことからこの機会に書籍版を入手。
