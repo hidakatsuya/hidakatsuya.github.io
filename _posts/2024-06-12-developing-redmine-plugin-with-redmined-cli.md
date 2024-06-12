@@ -13,9 +13,9 @@ https://github.com/hidakatsuya/redmined
 VSCode で `plugins/redmine_hello_world` を開く。デフォルトではターミナルはプラグインのディレクトリ `plugins/redmine_hello_world` で開くため、
 Redmine を起動するためには、わざわざルートディレクトリに移動しなければならない。
 
-```shell
-cd ../../
-redmined bin/rails s
+```
+$ cd ../../
+$ redmined bin/rails s
 ```
 
 これを解消するために、`redmined` をサブディレクトリで実行できるように対応した。
@@ -23,10 +23,10 @@ https://github.com/hidakatsuya/redmined/commit/7e2f08b38544c24a44e4640716976c89b
 
 これによって、プラグインのディレクトリから移動することなく、テストの実行や Redmine の起動を行うことができるようになった。
 
-```shell
-pwd
+```
+$ pwd
 path/to/redmine/plguins/redmine_hello_world
 
-redmined bin/rails redmine:plugins:test
+$ redmined bin/rails redmine:plugins:test
 ...
 ```
