@@ -20,19 +20,33 @@ Katsuya HIDAKA
 - [Hatena](https://b.hatena.ne.jp/hidakatsuya)
 - Others: [Gist](https://gist.github.com/hidakatsuya) / [asciinema](https://asciinema.org/~hidakatsuya) / [CodePen](https://codepen.io/hidakatsuya)
 
-Webアプリケーションエンジニアとして活動。Rails が得意。2023年からは Android エンジニアとしての活動も開始。プライベートでは、[Thinreports](https://github.com/thinreports) とその周辺・依存ライブラリの開発やメンテナンス、Android アプリを作っている。
+Webアプリケーションエンジニアとして活動。Ruby と Rails が得意。最近は Redmine 本体やプラグイン、周辺ツールの開発も行っている。
 
 ## Products
+
+### Ruby
 
 - [Thinreports (Ruby, Typescript, Vue.js)](https://github.com/thinreports/thinreports) : A PDF generation tools for Ruby
 - [prawn-emoji (Ruby)](https://github.com/hidakatsuya/prawn-emoji) : An extension that add Emoji support to [Prawn](https://github.com/prawnpdf/prawn)
 - [flexdot (Ruby)](https://github.com/hidakatsuya/flexdot) : A Flexible and Rake based dotfile manager
 - [pdf_matcher (Ruby)](https://github.com/hidakatsuya/pdf_matcher) : A gem to compare two PDFs and output the differences using [diff-pdf](https://github.com/vslavik/diff-pdf)
 - [pdf_matcher-testing (Ruby)](https://github.com/hidakatsuya/pdf_matcher-testing) : This gem allows testing frameworks to perform PDF matching tests with the pdf_matcher
+- Shopping List [Web (Hotwire)](https://github.com/hidakatsuya/shopping_list) / [Android (Kotlin, turbo-android)](https://github.com/hidakatsuya/shopping_list-android) / [CLI (Go)](https://github.com/hidakatsuya/shopping_list-cli) : A simple shopping list management applications
+
+### Redmine
+
+- [Rexer](https://github.com/hidakatsuya/rexer) : A Redmine Extension (Plugin and Theme) manager
+- [redmined](https://github.com/hidakatsuya/redmined) : A docked CLI for Redmine development environment
+- [action-setup-redmine](https://github.com/hidakatsuya/action-setup-redmine) : This action installs Redmine and sets up an environment to run tests
+
+### GitHub Actions
+
 - [action-setup-diff-pdf (JavaScript)](https://github.com/hidakatsuya/action-setup-diff-pdf) : A GitHub Action to install diff-pdf
 - [action-report-android-lint (JavaScript)](https://github.com/hidakatsuya/action-report-android-lint) : A GitHub Action to check and report the results of Android Lint in Job Summaries
+
+### Android
+
 - [Shopping List (Kotlin, Jetpack Compose)](https://github.com/hidakatsuya/ShoppingList) : An Android app built with Jetpack Compose and M3 to manage what to buy
-- Shopping List [Web (Hotwire)](https://github.com/hidakatsuya/shopping_list) / [Android (Kotlin, turbo-android)](https://github.com/hidakatsuya/shopping_list-android) / [CLI (Go)](https://github.com/hidakatsuya/shopping_list-cli) : A simple shopping list management applications
 
 ## History
 
