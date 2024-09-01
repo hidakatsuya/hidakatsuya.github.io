@@ -2,7 +2,9 @@
 title: Redmined CLI に自身を最新に更新する機能を追加した
 ---
 
-以前作った [Redmined CLI](2024-04-07-docked-cli-for-redmine-development-environment.md) を日々使い倒している。また、それに合わせて少しづつ改善を進めてきた。
+以前作った [Redmined CLI](https://github.com/hidakatsuya/redmined) を日々使い倒している。また、それに合わせて少しづつ改善を進めてきた。
+
+https://github.com/hidakatsuya/redmined
 
 Changelog を書いたり、特段のリリースプロセスを行っているわけではないので、ここで主な変更点をまとめておく。
 
@@ -10,6 +12,12 @@ Changelog を書いたり、特段のリリースプロセスを行っている�
 
 ```
 $ redmined -u
+Updating redmined...
+Installed redmined to /home/hidakatsuya/.local/bin
+
+Updating redmined images...
+ghcr.io/hidakatsuya/redmined:latest
+ghcr.io/hidakatsuya/redmined:ruby3.3
 ```
 
 上記のコマンドを実行すると、次の処理が行われ、手元の Redmined がその時点の最新の状態に更新される。
@@ -17,7 +25,7 @@ $ redmined -u
 * `redmined` 自身を https://github.com/hidakatsuya/redmined/blob/main/redmined に差し替える
 * ローカルにある Redmined の Docker image を全て `docker pull` して最新に更新する
 
-## 設定ファイル .redmined.json の中身を出力する
+## 設定ファイル .redmined.json の内容を出力する機能を追加
 
 ```
 $ redmined -c
@@ -35,9 +43,11 @@ $ redmined -c
 
 `cat .redmined.json` と同じ。
 
-## `docker run` するときの platform、TTYの無効化、
+## コマンド実行時の設定
 
 ### REDMINED_PLATFORM
+
+コンテナ起動時の platform を指定する設定。
 
 ```
 $ export REDMINED_PLATFORM=linux/amd64
@@ -58,6 +68,8 @@ $ redmined bin/rails server
 
 ### REDMINED_NO_TTY
 
+コンテナでコマンドを実行するときの tty を無効化する設定。
+
 デフォルトでは `redmined` に渡されたコマンドは `docker run -it` で実行される。
 tty の無い環境で `redmined` を実行したい場合は、次のように tty を無効にできる。
 
@@ -71,7 +83,31 @@ $ redmined bundle install
 $ redmined -T bundle install
 ```
 
-## コマンドヘルプを改善
+### REDMINED_CONTAINER_ENVS
+
+コンテナ内に渡す環境変数の設定。
+
+```
+$ export REDMINED_CONTAINER_ENVS="FOO=1 BAR=2"
+$ redmined echo $FOO
+1
+```
+
+設定ファイルでも次のように設定できる。
+
+```json
+{
+  "default": {
+    "name": "redmine",
+    "env": {
+      "FOO": 1,
+      "BAR": 2
+    }
+  }
+}
+```
+
+## コマンドヘルプの改善
 
 コマンドヘルプに使えるオプションとコマンドのサンプルを追記した。
 
