@@ -16,7 +16,7 @@ https://git-scm.com/docs/git-push より
 git push origin new-feature
 ```
 
-前述のドキュメントにはっきり書かれている通り、常にこれでいい。
+前述のドキュメントにはっきり書かれている通り、そんなことをしなくても常にこれでいい。
 ```
 git push origin HEAD
 ```
@@ -56,7 +56,7 @@ https://git-scm.com/docs/git-config#Documentation/git-config.txt-username より
 ## Git のリリースノート
 
 Git のリリースノートの元データは同リポジトリの [Documentation/RelNotes](https://github.com/git/git/commits/master/Documentation/RelNotes) にある。
-しかし、この中から今回取り上げたような機能を知ることを現実的ではない。
+しかし、この中から今回取り上げたような機能を知ることは現実的ではない。
 
 現状では、GitHub Blog に投稿されるまとめ [Highlights from Git 2.46](https://github.blog/open-source/git/highlights-from-git-2-46/) の記事を読むのが良さそう。
-これらの記事は、 [Home/Open Source/Git](https://github.blog/open-source/git/) か [Hightlight from Git の検索結果](https://github.blog/?s=Highlights+from+Git) から一覧できる。
+これらの記事は、 [Home/Open Source/Git](https://github.blog/open-source/git/) や [Hightlight from Git の検索結果](https://github.blog/?s=Highlights+from+Git) で一覧できる。
