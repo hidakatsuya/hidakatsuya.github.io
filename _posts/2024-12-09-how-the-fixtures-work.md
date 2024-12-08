@@ -57,26 +57,26 @@ A -> B の順で実行されるとき、fixture はデータベースを次の�
 ### 1. a_test.rb
 
 1. `fixtures :users` のロード
-  1. `SQL: begin transaction`
-  2. `SQL: DELETE FROM "users";`: users テーブルをクリア
-  3. `INSERT INTO "userstes" ...`: users.yml のデータを全て追加
-  4. `SQL: commit transaction`
+   1. `SQL: begin transaction`
+   2. `SQL: DELETE FROM "users";`: users テーブルをクリア
+   3. `INSERT INTO "userstes" ...`: users.yml のデータを全て追加
+   4. `SQL: commit transaction`
 2. ATest の実行
-  1. `SQL: begin transaction`
-  2. `test "A Test"` を実行
-  3. `SQL: rollback transaction`
+   1. `SQL: begin transaction`
+   2. `test "A Test"` を実行
+   3. `SQL: rollback transaction`
 
 ### 2. b_test.rb
 
 1. `fixtures :projects` のロード
-  1. `SQL: begin transaction`
-  2. `SQL: DELETE FROM "projects"`: projects テーブルをクリア
-  3. `INSERT INTO "projects" ...`: projects.yml のデータを全て追加
-  4. `SQL: commit transaction`
+   1. `SQL: begin transaction`
+   2. `SQL: DELETE FROM "projects"`: projects テーブルをクリア
+   3. `INSERT INTO "projects" ...`: projects.yml のデータを全て追加
+   4. `SQL: commit transaction`
 2. BTest の実行
-  1. `SQL: begin transaction`
-  2. `test "B Test"` を実行
-  3. `SQL: rollback transaction`
+   1. `SQL: begin transaction`
+   2. `test "B Test"` を実行
+   3. `SQL: rollback transaction`
 
 a_test.rb の実行後、users テーブルのデータは残っているので、b_test.rb は users.yml のデータ + projects.yml のデータの状態で実行されることになる。
 
