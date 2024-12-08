@@ -8,7 +8,7 @@ title: Fixture はどのようにデータをロードしているか
 ## 準備
 
 まず、検証用の ATest と BTest を追加する。
-https://github.com/hidakatsuya/redmine/commit/94bf0df5bb6f74778ca3e7fb1ef8c14b687d4455
+https://github.com/hidakatsuya/redmine/commit/36c68804179eea117ac6eb1ea57ac4d2eb898ca4
 
 ```ruby
 # a_test.rb
