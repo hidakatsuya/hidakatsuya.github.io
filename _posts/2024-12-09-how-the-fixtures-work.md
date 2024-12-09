@@ -2,7 +2,7 @@
 title: Fixture はどのようにデータをロードしているか
 ---
 
-`fixtures :user` がどのようにデータをロードしているのかを調べる。
+`fixtures :users` がどのようにデータをロードしているのかを調べる。
 なお、以下は Redmine の master の最新を使って検証を行った結果である。
 
 ## 準備
@@ -52,14 +52,14 @@ end
 $ bin/rails test test/unit/a_test.rb test/unit/b_test.rb
 ```
 
-A -> B の順で実行されるとき、fixture はデータベースを次のように操作する。
+A -> B の順で実行されるとき、Fixture はデータベースを次のように操作する。
 
 ### 1. a_test.rb
 
 1. `fixtures :users` のロード
    1. `SQL: begin transaction`
    2. `SQL: DELETE FROM "users";`: users テーブルをクリア
-   3. `INSERT INTO "userstes" ...`: users.yml のデータを全て追加
+   3. `INSERT INTO "users" ...`: users.yml のデータを全て追加
    4. `SQL: commit transaction`
 2. ATest の実行
    1. `SQL: begin transaction`
