@@ -75,18 +75,19 @@ https://www.redmine.org/issues/41931
 assert_equal 'relation', to.journals.last.details.last.property
 ```
 
-`to.journals.last.details` の結果には、3つのデータが含まれ、かつソート順が保証されていないために、`last` の結果が一定ではないため失敗します。
-対象の fixtures のファイルを blame すると、当初は `details` は1つのデータしか持たなかったようですが、その後テストデータの変更によってデータが増え、ランダムで失敗するようになったようです。
+`to.journals.last.details` の結果には3つのデータが含まれ、かつソート順が保証されていないためにテストが失敗します。
+
+対象の fixtures のファイルを blame すると、当初は `details` は1つのデータしか持たなかったようです。しかし、その後テストデータの変更によって `details` は3つのデータを持つようになり、ランダムで失敗するようになってしまいました。
 
 ### #41623 Fix tests that randomly failed due to required fixtures not being loaded
 
 https://www.redmine.org/issues/41623
 
-必要な fixtures が宣言されていないために、テストデータが足りず、ランダムで失敗するテストを修正したチケットです。
+必要な fixtures が宣言されていないために、テストデータが足りず、ランダムで失敗するいくつかのテストを修正したチケットです。
 必ず失敗するのではなく、ランダムで失敗する理由は後で説明します。
 
 少し前までの Redmine のテストでは、以下のように失敗するテストは、大抵が fixtures の不足によるものでした。
-そして、それらを直しても中々減らない。そういう状況でした。
+しかも、それらを直しても中々減らない。そういう状況でした。
 
 ```
 Failure:
@@ -97,8 +98,8 @@ Expected: 3
 bin/rails test test/unit/changeset_test.rb:39
 ```
 
-このチケットのパッチでやっていることは単純ですが、中には、テストデータが不足しているために内部的にバリデーションに失敗するためにテストが失敗するケースもありました。
-しかも、バリデーションの失敗を握りつぶしているため、特定に時間がかかりました。
+このチケットのパッチでやっていることは単純ですが、中には、テストデータが不足しているために内部的にバリデーションで失敗し、結果テストが失敗するケースもありました。
+バリデーションの失敗を握りつぶしているため、特定に時間がかかりました。
 
 ```
 From: /redmine/app/models/changeset.rb @ line 260 :
@@ -125,16 +126,16 @@ irb(#<Changeset:0x000073145f1036a0>):002> issue.errors.full_messages
 
 https://www.redmine.org/issues/41961
 
-少し前までの Redmine のテストでは、テストファイルごとに使用するテストデータを宣言していました。
+少し前までの Redmine のテストでは、テストファイルごとに必要なテストデータを宣言していました。
 
 ```ruby
 class UserTest < ActiveSupport::TestCase
   fixtures :users, :email_addresses, :members, :projects, :roles, :member_roles, :auth_sources, (snip)
 ```
 
-この fixtures の宣言が一つでも不足していると、テストはランダムで失敗します。なぜランダムなのか。
+この fixtures の宣言が一つでも不足していると、テストはランダムで失敗します。
 
-例えば、以下の２つのテストを用意します。
+なぜランダムなのか。例えば、以下の２つのテストを用意します。
 
 ```ruby
 # test/unit/a_test.rb
@@ -163,7 +164,7 @@ end
 
 これがランダムで失敗する原因です。テストの実行順序の組み合わせは無数にあるため、テストを直しても直しても減らなかったというわけです。
 
-これを解決するために、テストファイルごとに必要な fixtures を個別に宣言することをやめ、 全てのテストで `fixtures :all` を宣言して
+この解決として、テストファイルごとに必要な fixtures を個別に宣言することをやめ、 全てのテストで `fixtures :all` を宣言して
 常に全てのテストデータをロードするように変更しました。
 
 その後は fixtures の不足によってテストがランダムに失敗することは起こっていないようです。
