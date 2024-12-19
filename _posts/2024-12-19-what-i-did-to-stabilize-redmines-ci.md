@@ -59,7 +59,7 @@ end
 ```
 
 `DestroyProjectsJob.schedule()` は、引数の `@projects` の id を取り出してジョブ引数に渡すので、
-`@projects` をセットするときのクエリ条件の `[1, 2]` を期待としています。
+`@projects` をセットするときのクエリ条件の `[1, 2]` を期待値としています。
 一見問題なさそうですが、 `@projects` 自体のソート順が保証されていないためにランダムで失敗します。
 
 ### #41931 Fix random failures in IssueRelationTest#test_create_with_initialized_journals due to ambiguous conditions for retrieving the expected detail
@@ -99,7 +99,7 @@ bin/rails test test/unit/changeset_test.rb:39
 ```
 
 このチケットのパッチでやっていることは単純ですが、中には、テストデータが不足しているために内部的にバリデーションで失敗し、結果テストが失敗するケースもありました。
-バリデーションの失敗を握りつぶしているため、特定に時間がかかりました。
+バリデーションの失敗は握りつぶされているため、特定には時間がかかりました。
 
 ```
 From: /redmine/app/models/changeset.rb @ line 260 :
@@ -124,7 +124,7 @@ irb(#<Changeset:0x000073145f1036a0>):002> issue.errors.full_messages
 
 ## 常に全ての fixture をロードするように変更
 
-https://www.redmine.org/issues/41961
+[#41961 Use `fixtures :all` to ensure consistent test data and improve test reliability](https://www.redmine.org/issues/41961)
 
 少し前までの Redmine のテストでは、テストファイルごとに必要なテストデータを宣言していました。
 
