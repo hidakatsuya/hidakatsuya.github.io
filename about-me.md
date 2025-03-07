@@ -12,6 +12,7 @@ Katsuya HIDAKA
 
 - [hidakatsuya.dev](/)
 - [GitHub](https://github.com/hidakatsuya)
+- [Redmine.org](https://www.redmine.org/users/37224)
 - [X (Twitter)](https://twitter.com/hidakatsuya)
 - [Speaker Deck](https://speakerdeck.com/hidakatsuya)
 - [Stack Overflow](https://stackoverflow.com/users/1160252/hidakatsuya)
@@ -20,7 +21,7 @@ Katsuya HIDAKA
 - [Hatena](https://b.hatena.ne.jp/hidakatsuya)
 - Others: [Gist](https://gist.github.com/hidakatsuya) / [asciinema](https://asciinema.org/~hidakatsuya) / [CodePen](https://codepen.io/hidakatsuya)
 
-Webアプリケーションエンジニアとして活動。Ruby と Rails が得意。最近は Redmine 本体やプラグイン、周辺ツールの開発も行っている。
+Webアプリケーションエンジニアとして活動。Ruby と Rails が得意。最近は Redmine 本体やプラグイン、周辺ツールの開発を中心に行っている。Redmineでは、新機能の開発だけでなく、CIの整備（安定化と高速化）にも取り組んでいる。
 
 ## Products
 
