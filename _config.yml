@@ -18,6 +18,8 @@ plugins:
   - jekyll-gist
   - jemoji
 
+google_analytics: G-RR4D3YF2FY
+
 relative_links:
   collections: true
 
