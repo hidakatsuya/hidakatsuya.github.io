@@ -64,9 +64,9 @@ Webアプリケーションエンジニアとして活動。Ruby と Rails が�
 
 ## Award
 
-* [The Redmine Award 第3回 特別貢献賞](https://redmine-japan.org)
-* [第6回フクオカRuby大賞 特別賞 REPOTEN-API](https://digitalfukuoka.jp/past/event_reports/12Plocale=ja.html)
-* [第4回フクオカRuby大賞 大賞 Thinreports](https://digitalfukuoka.jp/past/event_reports/7Plocale=ja.html)
+* 2025 [The Redmine Award 第3回 特別貢献賞](https://redmine-japan.org)
+* 2014 [第6回フクオカRuby大賞 特別賞 REPOTEN-API](https://digitalfukuoka.jp/past/event_reports/12Plocale=ja.html)
+* 2012 [第4回フクオカRuby大賞 大賞 Thinreports](https://digitalfukuoka.jp/past/event_reports/7Plocale=ja.html)
 
 ## Presentations
 
