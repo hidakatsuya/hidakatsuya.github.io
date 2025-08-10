@@ -29,21 +29,27 @@ Webアプリケーションエンジニアとして活動。Ruby と Rails が�
 
 - [Thinreports (Ruby, Typescript, Vue.js)](https://github.com/thinreports/thinreports) : A PDF generation tools for Ruby
 - [prawn-emoji (Ruby)](https://github.com/hidakatsuya/prawn-emoji) : An extension that add Emoji support to [Prawn](https://github.com/prawnpdf/prawn)
-- [flexdot (Ruby)](https://github.com/hidakatsuya/flexdot) : A Flexible and Rake based dotfile manager
 - [pdf_matcher (Ruby)](https://github.com/hidakatsuya/pdf_matcher) : A gem to compare two PDFs and output the differences using [diff-pdf](https://github.com/vslavik/diff-pdf)
 - [pdf_matcher-testing (Ruby)](https://github.com/hidakatsuya/pdf_matcher-testing) : This gem allows testing frameworks to perform PDF matching tests with the pdf_matcher
 - Shopping List [Web (Hotwire)](https://github.com/hidakatsuya/shopping_list) / [Android (Kotlin, turbo-android)](https://github.com/hidakatsuya/shopping_list-android) / [CLI (Go)](https://github.com/hidakatsuya/shopping_list-cli) : A simple shopping list management applications
 
-### Redmine
+### Rust
 
-- [Rexer](https://github.com/hidakatsuya/rexer) : A Redmine Extension (Plugin and Theme) manager
-- [redmined](https://github.com/hidakatsuya/redmined) : A docked CLI for Redmine development environment
-- [action-setup-redmine](https://github.com/hidakatsuya/action-setup-redmine) : This action installs Redmine and sets up an environment to run tests
+- [Rexer (Rust)](https://github.com/hidakatsuya/rexer-rs) : A fast, cross-platform CLI tool for managing Redmine Extensions (Plugins and Themes)
+
+### Go
+
+- [flexdot (Go)](https://github.com/hidakatsuya/flexdot-go) : A Flexible dotfile manager
+
+### Shell
+
+- [redmined (Shell)](https://github.com/hidakatsuya/redmined) : A docked CLI for Redmine development environment
 
 ### GitHub Actions
 
 - [action-setup-diff-pdf (JavaScript)](https://github.com/hidakatsuya/action-setup-diff-pdf) : A GitHub Action to install diff-pdf
 - [action-report-android-lint (JavaScript)](https://github.com/hidakatsuya/action-report-android-lint) : A GitHub Action to check and report the results of Android Lint in Job Summaries
+- [action-setup-redmine (Shell)](https://github.com/hidakatsuya/action-setup-redmine) : This action installs Redmine and sets up an environment to run tests
 
 ### Android
 
@@ -55,6 +61,12 @@ Webアプリケーションエンジニアとして活動。Ruby と Rails が�
 * 2020.07-2024.03 弥生株式会社（吸収合併による転籍）
 * 2015.10-2020.06 株式会社Misoca
 * 2003.05-2015.09 株式会社マツケイ
+
+## Award
+
+* [The Redmine Award 第3回 特別貢献賞](https://redmine-japan.org)
+* [第6回フクオカRuby大賞 特別賞 REPOTEN-API](https://digitalfukuoka.jp/past/event_reports/12Plocale=ja.html)
+* [第4回フクオカRuby大賞 大賞 Thinreports](https://digitalfukuoka.jp/past/event_reports/7Plocale=ja.html)
 
 ## Presentations
 
