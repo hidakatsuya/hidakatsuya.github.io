@@ -23,7 +23,7 @@ Katsuya HIDAKA
 
 Webアプリケーションエンジニアとして活動。Ruby と Rails が得意。最近は Redmine 本体やプラグイン、周辺ツールの開発を中心に行っている。Redmineでは、新機能の開発だけでなく、CIの整備（安定化と高速化）にも取り組んでいる。
 
-## Products
+## Product
 
 ### Ruby
 
@@ -68,7 +68,7 @@ Webアプリケーションエンジニアとして活動。Ruby と Rails が�
 * 2014 [第6回フクオカRuby大賞 特別賞 REPOTEN-API](https://digitalfukuoka.jp/past/event_reports/12Plocale=ja.html)
 * 2012 [第4回フクオカRuby大賞 大賞 Thinreports](https://digitalfukuoka.jp/past/event_reports/7Plocale=ja.html)
 
-## Presentations
+## Presentation
 
 - [後方互換の保ち方 - 松江Ruby会議09](https://speakerdeck.com/hidakatsuya/how-to-maintain-compatibility)
 - [HTML帳票 - 第3回フロントエンド勉強会 in 松江](https://speakerdeck.com/hidakatsuya/frontend-study-group-in-sannin-3rd)
