@@ -43,7 +43,7 @@ Webアプリケーションエンジニアとして活動。Ruby と Rails が�
 
 ### Shell
 
-- [redmined (Shell)](https://github.com/hidakatsuya/redmined) : A docked CLI for Redmine development environment
+- [redmined (Shell)](https://github.com/hidakatsuya/redmined) : A dockerized CLI for Redmine development environment
 
 ### GitHub Actions
 
