@@ -31,7 +31,7 @@ Auto-review は、sandbox 外の操作を別のAIエージェントが審査し�
 
 実際のチャットではこんな感じになる。
 
-<img width="771" height="384" alt="CleanShot_2026-08-05_at_13 45 58" src="https://github.com/user-attachments/assets/edb646ce-46bd-4c77-94c4-933242d3e263" />
+![](https://github.com/user-attachments/assets/edb646ce-46bd-4c77-94c4-933242d3e263)
 
 - メインエージェントが `docker compose exec` を実行しようとする
 - `approvals_reviewer (auto_review)` が検証して承認する
@@ -101,7 +101,7 @@ prefix_rule(pattern = ["aws"], decision = "forbidden")
 
 ルールのファイル構成は次のようにしている。
 
-```python
+```shell
 ~/.codex/rules
 ├── default.rules
 └── policy.rules
@@ -169,11 +169,11 @@ X-MCP-Readonly = "true"
 
 専用プロジェクトを作って、Codex 運用の基本方針を定義し、その方針に基づいてAIが設定と検証を行う。設定は dotfiles としてバージョン管理し、Codex の設定のみAIが参照・書き込みできるようにしている。
 
-<img width="1345" height="553" alt="image" src="https://github.com/user-attachments/assets/126e8d29-5e34-444e-9597-323a95e1d57a" />
+![](https://github.com/user-attachments/assets/126e8d29-5e34-444e-9597-323a95e1d57a)
 
 まず、`mise dotfiles` を使って Codex も含めて dotfiles 管理している。構成はこう。
 
-```toml
+```shell
 ~/.dotfiles
 ❯ tree .cod
 .codex
@@ -194,7 +194,7 @@ X-MCP-Readonly = "true"
 
 そして、設定を編集するための Codex プロジェクトを作成し、このディレクトリを書き込み許可対象に追加。
 
-```toml
+```shell
 ~/dev/projects/codex-config
 ├── .codex
 │   └── config.toml
