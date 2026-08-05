@@ -51,6 +51,8 @@ Auto-review は、sandbox 外の操作を別のAIエージェントが審査し�
 ### sandbox・承認・認証・ネットワーク
 
 ```toml
+# ~/.codex/config.toml
+
 sandbox_mode = "workspace-write"
 approvals_reviewer = "auto_review"
 cli_auth_credentials_store = "keyring"
@@ -68,6 +70,8 @@ network_access = false
 ### sandbox外で自動許可するコマンド
 
 ```python
+# ~/.codex/rules/policy.rules
+
 # git
 prefix_rule(pattern = ["git", "fetch"], decision = "allow")
 prefix_rule(pattern = ["git", "switch", "-c"], decision = "allow")
@@ -117,6 +121,8 @@ prefix_rule(pattern = ["aws"], decision = "forbidden")
 #### 参照系は許可
 
 ```toml
+# ~/.codex/config.toml
+
 [mcp_servers.aws-documentation-mcp-server.tools.read_documentation]
 approval_mode = "approve"
 ...
@@ -125,11 +131,15 @@ approval_mode = "approve"
 #### ブラウザへのアクセスは Playwright に限定し、localhost と安全な操作のみ許可
 
 ```toml
+# ~/.codex/config.toml
+
 [plugins."browser@openai-bundled"]
 enabled = false
 ```
 
 ```toml
+# ~/.codex/config.toml
+
 [mcp_servers.playwright]
 args = [
   "@playwright/mcp@latest",
@@ -146,13 +156,16 @@ approval_mode = "approve"
 ...
 ```
 
-- ChatGPT（Codex, Work）にバンドルされている Browser プラグインを無効化（内部的には Playwright が動作するので十分使えるが、localhost の制御がしづらいため無効にしている）
+- ChatGPT（Codex, Work）にバンドルされている Browser プラグインを無効化
+  - 内部的には Playwright が動作するので十分使えるが、localhost の制御がしづらいため Playwright を採用。こちらは無効にしている
 - Playwright は localhost へのアクセスのみ許可する
-- 動作検証などで必須の操作のみ明示的に許可し、それ以外は Auto review へ回す
+- 動作検証などで必須の操作のみ明示的に許可し、それ以外は Auto review に任せる
 
 #### GitHub MCP は参照のみで利用
 
 ```toml
+# ~/.codex/config.toml
+
 [mcp_servers.github]
 url = "https://api.githubcopilot.com/mcp/"
 bearer_token_env_var = "GITHUB_TOKEN_MCP_PUBLIC"
