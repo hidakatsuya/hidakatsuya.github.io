@@ -31,7 +31,7 @@ Auto-review は、sandbox 外の操作を別のAIエージェントが審査し�
 
 実際のチャットではこんな感じになる。
 
-![](https://github.com/user-attachments/assets/edb646ce-46bd-4c77-94c4-933242d3e263)
+[![](https://github.com/user-attachments/assets/edb646ce-46bd-4c77-94c4-933242d3e263)](https://github.com/user-attachments/assets/edb646ce-46bd-4c77-94c4-933242d3e263)
 
 - メインエージェントが `docker compose exec` を実行しようとする
 - `approvals_reviewer (auto_review)` が検証して承認する
@@ -169,13 +169,12 @@ X-MCP-Readonly = "true"
 
 専用プロジェクトを作って、Codex 運用の基本方針を定義し、その方針に基づいてAIが設定と検証を行う。設定は dotfiles としてバージョン管理し、Codex の設定のみAIが参照・書き込みできるようにしている。
 
-![](https://github.com/user-attachments/assets/126e8d29-5e34-444e-9597-323a95e1d57a)
+[![](https://github.com/user-attachments/assets/126e8d29-5e34-444e-9597-323a95e1d57a)](https://github.com/user-attachments/assets/126e8d29-5e34-444e-9597-323a95e1d57a)
 
 まず、`mise dotfiles` を使って Codex も含めて dotfiles 管理している。構成はこう。
 
 ```shell
-~/.dotfiles
-❯ tree .cod
+❯ tree ~/.dotfiles/.codex
 .codex
 ├── agents
 │   ├── executor.toml
