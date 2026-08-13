@@ -4,7 +4,7 @@ title: AIに安全に作業を任せる
 
 AI（Codex）を使って開発するとき、とにかく承認の対応がめんどくさい。かといって、AI になんでも任せることはしたくない。
 
-その解決のためにしたことをまとめる。
+その解決のために最低限したことをまとめる。
 
 ## 基本的な考え方
 
@@ -16,6 +16,11 @@ AI（Codex）を使って開発するとき、とにかく承認の対応がめ�
 - それ以外のコマンドや sandbox 外の操作は Auto-review に任せる
 
 後から気づいたが、この内容は OpenAI が5月に出した [Running Codex safely at OpenAI](https://openai.com/index/running-codex-safely/) と整合している。必読。
+
+そして、次のことも同じくらい大事。
+
+* 設定は最小限にする（設定を書きたくいないし、メンテもしたくない）
+* ChatGPT の機能だけで完結する（3rdパーティの何かは使わない）
 
 ## どう変わったか
 
@@ -219,7 +224,7 @@ X-MCP-Readonly = "true"
 docs/policy.md に方針を明記し、それを AGENTS.md で読ませる。
 
 ```markdown
-# Codex Harness
+# Codex Security Policy
 
 ## 目的
 
