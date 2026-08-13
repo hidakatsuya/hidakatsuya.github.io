@@ -212,11 +212,11 @@ X-MCP-Readonly = "true"
 │   └── config.toml
 ├── AGENTS.md
 ├── docs
-│   └── harness.md
+│   └── policy.md
 └── README.md
 ```
 
-docs/harness.md に方針を明記し、それを AGENTS.md で読ませる。
+docs/policy.md に方針を明記し、それを AGENTS.md で読ませる。
 
 ```markdown
 # Codex Harness
@@ -258,4 +258,3 @@ writable_roots = ["/Users/hidakatsuya/.dotfiles/.codex"]
 
 それと、現在の開発では、gpt-5.6 Sol を orchestrator として、Terra の executor サブエージェントと、同じく Terra の scout サブエージェントで開発を行う形をとっている。orchestrator は、要件の定義とタスクの分解および指示、成果物のレビューとセキュリティレビューを行う。設定・構成自体は非常にシンプルだが、悪くないような気はしている。その辺もどこかでまとめようと思う。
 
-”Harness” の定義が何なのかはいまいち理解していない。
